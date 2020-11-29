@@ -5,337 +5,817 @@
 
 
 <html>
-  <style>
-    *{
-      margin: 0;
-      padding: 0;
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    background-color: hsl(227, 90%, 99%);
+    font-family: Helvetica;
+  }
+  .TopBox{
+    width:100%;
+    background-color: #4B5281;
+    color:#FFFFFF;
+    font-family: Helvetica;
+    text-align: center;
+  }
+
+  .navButtons{
+    display: none;
+  }
+
+  .NavAndName h3{
+    text-align: left;
+    font-size: 30px;
+    padding-bottom:40px;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  .accentPeriod{
+    color:#FF9F1C;
+  }
+
+  .picture_of_avatar{
+    width:100%;
+    margin-bottom: 20px;
+  }
+
+  .typingText{
+    font-size: 25px;
+    font-family: monospace;
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .ContactMeBUtton{
+    background-color: #FF9F1C;
+    color:#FFFFFF;
+    padding:15px;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 25px;
+    margin-bottom: 60px;
+    font-family: Helvetica;
+    font-weight: bold;
+  }
+  .wrapper{
+    width:100%;
+  }
+
+
+
+  .column {
+    float: left;
+    width: 50%;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin:auto;
+  }
+
+  .column2 {
+    float: left;
+    width: 33.3%;
+  }
+
+  /* Clear floats after the columns */
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin:auto;
+  }
+
+  .SectionTitle{
+    color: #4B5281;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  .projectGallaryBox{
+    width:90%;
+    margin:auto;
+    height: 150px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+
+  .projectGallaryBoxCovid{
+    width:90%;
+    margin:auto;
+    height: 150px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-image: url("img/covid19appBack.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .projectGallaryBoxLittleAdNet{
+    width:90%;
+    margin:auto;
+    height: 150px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-image: url("img/littleadventures.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .projectGallaryBoxPoke{
+    width:90%;
+    margin:auto;
+    height: 150px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-image: url("img/pokemonPopularity.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .thumbnails{
+    width:95%;
+    margin:auto;
+  }
+  .tumbHoverCover{
+    border-radius: 15px;
+    background-color: #4B5281;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+  }
+
+  .projectTitle {
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    color:#FFFFFF;
+  }
+
+  .tumbHoverCover h5{
+    color: #FF9F1C;
+    font-size: 19px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+  }
+
+  .tumbHoverCover:hover{
+    animation: 1s thumbnailTitleCover;
+    animation-fill-mode: forwards;
+  }
+
+  .SkillsGallaryBoxDR{
+    width:90%;
+    margin:auto;
+    height: 100px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-image: url("img/racket-logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .SkillsGallaryBox{
+    width:90%;
+    margin:auto;
+    height: 100px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    text-align: center;
+
+  }
+
+
+  .SkillsGallaryBoxNet{
+    width:90%;
+    margin:auto;
+    height: 100px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-image: url("img/netlogologo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .SkillsGallaryBoxPy{
+    width:90%;
+    margin:auto;
+    height: 100px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-image: url("img/Python.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .SkillsGallaryBoxHtml{
+    width:90%;
+    margin:auto;
+    height: 100px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-image: url("img/html_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .SkillsGallaryBoxCSS{
+    width:90%;
+    margin:auto;
+    height: 100px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-image: url("img/CSS_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .SkillsGallaryBoxMITAPP{
+    width:90%;
+    margin:auto;
+    height: 100px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-image: url("img/MITlogo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .tumbHoverCoverSkills{
+    border-radius: 15px;
+    background-color: #FF9F1C;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+  }
+
+  .tumbHoverCoverSkills:hover{
+    animation: 1s thumbnailTitleCover;
+    animation-fill-mode: forwards;
+  }
+  .Y_CS{
+    width:90%;
+    margin:auto;
+    background-color: #EE596A;
+    box-shadow:  5px 5px 16px #F3909C,
+                -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color:#ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 25px;
     }
 
-    body{
-      background-color: hsl(227, 90%, 99%);
-      font-family: Helvetica;
+  @keyframes thumbnailTitleCover {
+    0%{
+      opacity: 0%;
     }
-    .TopBox{
-      width:100%;
-      background-color: #4B5281;
-      color:#FFFFFF;
-      font-family: Helvetica;
+    10%{
+      opacity: 10%;
+    }
+    20%{
+      opacity: 20%;
+    }
+    30%{
+      opacity: 30%;
+    }
+    40%{
+      opacity: 40%;
+    }
+    50%{
+      opacity: 50%;
+    }
+    100%{
+      opacity: 85%;
+    }
+  }
+  @media only screen and (min-width: 768px) {}
+
+  @media only screen and (min-width: 1000px) {}
+
+  .Dreams{
+      width:90%;
+      margin:auto;
+      background-color: #2EC4B6;
+      box-shadow:  5px 5px 16px #8BE4DB ,
+                  -5px -5px 16px #ffffff;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      background-repeat: no-repeat;
+      background-position: center;
       text-align: center;
-    }
-
-    .navButtons{
-      display: none;
-    }
-
-    .NavAndName h3{
-      text-align: left;
-      font-size: 30px;
-      padding-bottom:40px;
+      color:#ffffff;
       padding-top: 20px;
-      padding-left: 20px;
+      padding-bottom: 20px;
+      line-height: 25px;
     }
 
-    .accentPeriod{
-      color:#FF9F1C;
+  .education{
+        width:90%;
+        margin:auto;
+        background-color: #FF9F1C;
+        box-shadow:  5px 5px 16px #FFE6C2,
+                    -5px -5px 16px #ffffff;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        color:#ffffff;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        line-height: 25px;
+      }
+  .About_me_box_text{
+      margin: 20px;
     }
+  .picture_of_avatar_2{
+      text-align: center;
+    }
+  *{
+    margin: 0;
+    padding: 0;
+  }
 
-    .picture_of_avatar{
-      width:100%;
-      margin-bottom: 20px;
-    }
+  body{
+    background-color: hsl(227, 90%, 99%);
+    font-family: Helvetica;
+  }
+  .TopBox{
+    width:100%;
+    background-color: #4B5281;
+    color:#FFFFFF;
+    font-family: Helvetica;
+    text-align: center;
+  }
 
-    .typingText{
-      font-size: 25px;
-      font-family: monospace;
-      margin-bottom: 60px;
-      margin-left: 20px;
-      margin-right: 20px;
-    }
+  .navButtons{
+    display: none;
+  }
 
-    .ContactMeBUtton{
-      background-color: #FF9F1C;
-      color:#FFFFFF;
-      padding:15px;
-      font-size: 20px;
-      border: 0px;
-      border-radius: 25px;
-      margin-bottom: 60px;
-      font-family: Helvetica;
-      font-weight: bold;
-    }
-    .wrapper{
-      width:100%;
-    }
+  .NavAndName h3{
+    text-align: left;
+    font-size: 30px;
+    padding-bottom:40px;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+
+  .accentPeriod{
+    color:#FF9F1C;
+  }
+
+  .picture_of_avatar{
+    width:100%;
+    margin-bottom: 20px;
+  }
+
+  .typingText{
+    font-size: 25px;
+    font-family: monospace;
+    margin-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .ContactMeBUtton{
+    background-color: #FF9F1C;
+    color:#FFFFFF;
+    padding:15px;
+    font-size: 20px;
+    border: 0px;
+    border-radius: 25px;
+    margin-bottom: 60px;
+    font-family: Helvetica;
+    font-weight: bold;
+  }
+  .wrapper{
+    width:100%;
+  }
 
 
 
-    .column {
-      float: left;
-      width: 50%;
-    }
+  .column {
+    float: left;
+    width: 50%;
+  }
 
-    /* Clear floats after the columns */
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-      margin:auto;
-    }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin:auto;
+  }
 
-    .column2 {
-      float: left;
-      width: 33.3%;
-    }
+  .column2 {
+    float: left;
+    width: 33.3%;
+  }
 
-    /* Clear floats after the columns */
-    .row2:after {
-      content: "";
-      display: table;
-      clear: both;
-      margin:auto;
-    }
+  /* Clear floats after the columns */
+  .row2:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin:auto;
+  }
 
-    .SectionTitle{
-      color: #4B5281;
-      margin-top: 30px;
-      margin-left: 30px;
-      margin-bottom: 30px;
-      font-size: 30px;
-    }
-    .projectGallaryBox{
-      width:90%;
-      margin:auto;
-      height: 150px;
-      background-color: #FFFFFF;
-      box-shadow:  5px 5px 16px #ced5db,
-                 -5px -5px 16px #ffffff;
-      margin-bottom: 20px;
-      border-radius: 15px;
-    }
+  .SectionTitle{
+    color: #4B5281;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+  .projectGallaryBox{
+    width:90%;
+    margin:auto;
+    height: 150px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
 
-    .projectGallaryBoxCovid{
-      width:90%;
-      margin:auto;
-      height: 150px;
-      background-color: #FFFFFF;
-      box-shadow:  5px 5px 16px #ced5db,
-                 -5px -5px 16px #ffffff;
-      margin-bottom: 20px;
-      border-radius: 15px;
-      background-image: url("covid19appBack.png");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+  .projectGallaryBoxCovid{
+    width:90%;
+    margin:auto;
+    height: 150px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-image: url("img/covid19appBack.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-    .projectGallaryBoxLittleAdNet{
-      width:90%;
-      margin:auto;
-      height: 150px;
-      background-color: #FFFFFF;
-      box-shadow:  5px 5px 16px #ced5db,
-                 -5px -5px 16px #ffffff;
-      margin-bottom: 20px;
-      border-radius: 15px;
-      background-image: url("littleadventures.png");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+  .projectGallaryBoxMap{
+    width:90%;
+    margin:auto;
+    height: 150px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-image: url("img/mapItDriveItProto.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-    .projectGallaryBoxPoke{
-      width:90%;
-      margin:auto;
-      height: 150px;
-      background-color: #FFFFFF;
-      box-shadow:  5px 5px 16px #ced5db,
-                 -5px -5px 16px #ffffff;
-      margin-bottom: 20px;
-      border-radius: 15px;
-      background-image: url("pokemonPopularity.png");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+  .projectGallaryBoxLittleAdNet{
+    width:90%;
+    margin:auto;
+    height: 150px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-image: url("img/littleadventures.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-    .thumbnails{
-      width:95%;
-      margin:auto;
-    }
-    .tumbHoverCover{
-      border-radius: 15px;
-      background-color: #4B5281;
-      height: 100%;
-      width: 100%;
+  .projectGallaryBoxPoke{
+    width:90%;
+    margin:auto;
+    height: 150px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-image: url("img/pokemonPopularity.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+  .projectGallaryBoxFish{
+    width:90%;
+    margin:auto;
+    height: 150px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-image: url("img/GoFIshProto.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .thumbnails{
+    width:95%;
+    margin:auto;
+  }
+  .tumbHoverCover{
+    border-radius: 15px;
+    background-color: #4B5281;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+  }
+
+  .projectTitle {
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    color:#FFFFFF;
+  }
+
+  .tumbHoverCover h5{
+    color: #FF9F1C;
+    font-size: 19px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+  }
+
+  .tumbHoverCover:hover{
+    animation: 1s thumbnailTitleCover;
+    animation-fill-mode: forwards;
+  }
+
+  .SkillsGallaryBoxDR{
+    width:90%;
+    margin:auto;
+    height: 100px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-image: url("img/racket-logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .SkillsGallaryBox{
+    width:90%;
+    margin:auto;
+    height: 100px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    text-align: center;
+
+  }
+
+
+  .SkillsGallaryBoxNet{
+    width:90%;
+    margin:auto;
+    height: 100px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-image: url("img/netlogologo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .SkillsGallaryBoxPy{
+    width:90%;
+    margin:auto;
+    height: 100px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-image: url("img/Python.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .SkillsGallaryBoxHtml{
+    width:90%;
+    margin:auto;
+    height: 100px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-image: url("img/html_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .SkillsGallaryBoxCSS{
+    width:90%;
+    margin:auto;
+    height: 100px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-image: url("img/CSS_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .SkillsGallaryBoxMITAPP{
+    width:90%;
+    margin:auto;
+    height: 100px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-image: url("img/MITlogo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .tumbHoverCoverSkills{
+    border-radius: 15px;
+    background-color: #FF9F1C;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+  }
+
+  .tumbHoverCoverSkills:hover{
+    animation: 1s thumbnailTitleCover;
+    animation-fill-mode: forwards;
+  }
+
+  .tumbHoverCover button{
+    font-size:24px;
+    color:#FFFFFF;
+    background:#4B5281;
+    border:0px;
+    margin-left:80%;
+  }
+  .tumbHoverCover button:hover{
+    color: #FF9F1C;
+  }
+
+
+  /* CONTACT form */
+
+
+  input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border-radius: 10px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /*Top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    border-color:#FFFFFF;
+    border: 0px;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    font-family: Helvetica;
+    color: #707070;
+  }
+
+  .contactForm label{
+    color: #4B5281;
+  }
+
+  input[type=text], select, textarea:focus{
+     outline: none;
+  }
+
+  .response_box:hover{
+    border-style: solid;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-color: #FF9F1C;
+  }
+
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  @keyframes thumbnailTitleCover {
+    0%{
       opacity: 0%;
     }
-
-    .projectTitle {
-      padding-top: 40px;
-      padding-left: 15px;
-      padding-right: 15px;
-      font-size: 20px;
-      color:#FFFFFF;
+    10%{
+      opacity: 10%;
     }
-
-    .tumbHoverCover h5{
-      color: #FF9F1C;
-      font-size: 19px;
-      padding-left: 15px;
-      padding-right: 15px;
-      padding-top: 10px;
+    20%{
+      opacity: 20%;
     }
-
-    .tumbHoverCover:hover{
-      animation: 1s thumbnailTitleCover;
-      animation-fill-mode: forwards;
+    30%{
+      opacity: 30%;
     }
-
-    .SkillsGallaryBoxDR{
-      width:90%;
-      margin:auto;
-      height: 100px;
-      background-color: #FFFFFF;
-      box-shadow:  5px 5px 16px #ced5db,
-                 -5px -5px 16px #ffffff;
-      margin-bottom: 20px;
-      border-radius: 15px;
-      text-align: center;
-      background-image: url("racket-logo.svg");
-      background-repeat: no-repeat;
-      background-position: center;
+    40%{
+      opacity: 40%;
     }
-
-    .SkillsGallaryBox{
-      width:90%;
-      margin:auto;
-      height: 100px;
-      background-color: #FFFFFF;
-      box-shadow:  5px 5px 16px #ced5db,
-                 -5px -5px 16px #ffffff;
-      margin-bottom: 20px;
-      border-radius: 15px;
-      text-align: center;
-
+    50%{
+      opacity: 50%;
     }
-
-
-    .SkillsGallaryBoxNet{
-      width:90%;
-      margin:auto;
-      height: 100px;
-      background-color: #FFFFFF;
-      box-shadow:  5px 5px 16px #ced5db,
-                 -5px -5px 16px #ffffff;
-      margin-bottom: 20px;
-      border-radius: 15px;
-      text-align: center;
-      background-image: url("netlogologo.png");
-      background-repeat: no-repeat;
-      background-position: center;
+    100%{
+      opacity: 85%;
     }
+  }
+  @media only screen and (min-width: 768px) {}
 
-    .SkillsGallaryBoxPy{
-      width:90%;
-      margin:auto;
-      height: 100px;
-      background-color: #FFFFFF;
-      box-shadow:  5px 5px 16px #ced5db,
-                 -5px -5px 16px #ffffff;
-      margin-bottom: 20px;
-      border-radius: 15px;
-      text-align: center;
-      background-image: url("Python.jpg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .SkillsGallaryBoxHtml{
-      width:90%;
-      margin:auto;
-      height: 100px;
-      background-color: #FFFFFF;
-      box-shadow:  5px 5px 16px #ced5db,
-                 -5px -5px 16px #ffffff;
-      margin-bottom: 20px;
-      border-radius: 15px;
-      text-align: center;
-      background-image: url("html_logo.png");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .SkillsGallaryBoxCSS{
-      width:90%;
-      margin:auto;
-      height: 100px;
-      background-color: #FFFFFF;
-      box-shadow:  5px 5px 16px #ced5db,
-                 -5px -5px 16px #ffffff;
-      margin-bottom: 20px;
-      border-radius: 15px;
-      text-align: center;
-      background-image: url("CSS_logo.png");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .SkillsGallaryBoxMITAPP{
-      width:90%;
-      margin:auto;
-      height: 100px;
-      background-color: #FFFFFF;
-      box-shadow:  5px 5px 16px #ced5db,
-                 -5px -5px 16px #ffffff;
-      margin-bottom: 20px;
-      border-radius: 15px;
-      text-align: center;
-      background-image: url("MITlogo.png");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    .tumbHoverCoverSkills{
-      border-radius: 15px;
-      background-color: #FF9F1C;
-      height: 100%;
-      width: 100%;
-      opacity: 0%;
-    }
-
-    .tumbHoverCoverSkills:hover{
-      animation: 1s thumbnailTitleCover;
-      animation-fill-mode: forwards;
-    }
-    @keyframes thumbnailTitleCover {
-      0%{
-        opacity: 0%;
-      }
-      10%{
-        opacity: 10%;
-      }
-      20%{
-        opacity: 20%;
-      }
-      30%{
-        opacity: 30%;
-      }
-      40%{
-        opacity: 40%;
-      }
-      50%{
-        opacity: 50%;
-      }
-      100%{
-        opacity: 85%;
-      }
-    }
-    @media only screen and (min-width: 768px) {}
-
-    @media only screen and (min-width: 1000px) {}
-  </style>
+  @media only screen and (min-width: 1000px) {}
+</style>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <head>
     <meta charset="utf-8">
     <title></title>
     <meta name="viewport" content="width=divice-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="portfoliostyleb.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
     <div class="TopBox">
@@ -357,7 +837,7 @@
           <span
              class="txt-rotate"
              data-period="2000"
-             data-rotate='[ "python programmer.", "web-designer.", "netlogo mega-fan.", "rubber duck enthusiest.", "digital art creator.","full-stack developer" ]'></span>
+             data-rotate='[ "python programmer.", "web-designer.", "netlogo mega-fan.", "rubber duck enthusiast.", "digital art creator." ]'></span>
         </h4>
       </div>
       <button type="button" class="ContactMeBUtton" href="#">Contact Me!</button>
@@ -367,11 +847,27 @@
       <div class="thumbnails">
         <div class="row">
           <div class="column">
+            <div class="projectGallaryBoxMap">
+              <!-- put in any image or project thumbnail -->
+              <div class = "tumbHoverCover">
+                <h4 class="projectTitle">Map It, Drive It</h4>
+                <h5>VEX VR </h5>
+                <button class="goToProject" onclick="window.location.href='#';" >
+                  <i class='far fa-eye'></i>
+                </button>
+
+              </div>
+            </div>
+          </div>
+          <div class="column">
             <div class="projectGallaryBoxCovid">
               <!-- put in any image or project thumbnail -->
               <div class = "tumbHoverCover">
                 <h4 class="projectTitle">Covid 19 Safety App</h4>
-                <h5>MIT App Inventor</h5>
+                <h5>App Inventor</h5>
+                <button class="goToProject" onclick="window.location.href='#';" >
+                  <i class='far fa-eye'></i>
+                </button>
               </div>
             </div>
           </div>
@@ -380,7 +876,10 @@
               <!-- put in any image or project thumbnail -->
               <div class = "tumbHoverCover">
                 <h4 class="projectTitle">Little Adventures</h4>
-                <h5>MIT App Inventor</h5>
+                <h5>App Inventor</h5>
+                <button class="goToProject" onclick="window.location.href='#';" >
+                  <i class='far fa-eye'></i>
+                </button>
               </div>
             </div>
           </div>
@@ -389,7 +888,11 @@
               <!-- put in any image or project thumbnail -->
               <div class = "tumbHoverCover">
                 <h4 class="projectTitle">Duck Pond</h4>
-                <h5>MIT App Inventor</h5>
+                <h5>App Inventor</h5>
+                <br>
+                <button class="goToProject" onclick="window.location.href='#';" >
+                  <i class='far fa-eye'></i>
+                </button>
               </div>
             </div>
           </div>
@@ -399,6 +902,9 @@
               <div class = "tumbHoverCover">
                 <h4 class="projectTitle">Dino Info Website</h4>
                 <h5>HTML/CSS</h5>
+                <button class="goToProject" onclick="window.location.href='#';" >
+                  <i class='far fa-eye'></i>
+                </button>
               </div>
             </div>
           </div>
@@ -408,6 +914,9 @@
               <div class = "tumbHoverCover">
                 <h4 class="projectTitle">Pokemon Popularity</h4>
                 <h5>Python/Pychart</h5>
+                <button class="goToProject" onclick="window.location.href='#';" >
+                  <i class='far fa-eye'></i>
+                </button>
               </div>
             </div>
           </div>
@@ -417,15 +926,22 @@
               <div class = "tumbHoverCover">
                 <h4 class="projectTitle">Little Adventures</h4>
                 <h5>Netlogo</h5>
+                <button class="goToProject" onclick="window.location.href='#';" >
+                  <i class='far fa-eye'></i>
+                </button>
               </div>
             </div>
           </div>
           <div class="column">
-            <div class="projectGallaryBox">
+            <div class="projectGallaryBoxFish">
               <!-- put in any image or project thumbnail -->
               <div class = "tumbHoverCover">
                 <h4 class="projectTitle">Fishie Race</h4>
                 <h5>Netlogo</h5>
+                <br>
+                <button class="goToProject" onclick="window.location.href='#';" >
+                  <i class='far fa-eye'></i>
+                </button>
               </div>
             </div>
           </div>
@@ -493,10 +1009,72 @@
         </div>
       </div>
     </div>
+
+    <div class="wrapper">
+      <h2 class = "SectionTitle">About Me!</h2>
+      <div class ="picture_of_avatar_2">
+        <img src='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Round&hairColor=Blonde&facialHairType=Blank&clotheType=CollarSweater&clotheColor=White&eyeType=Side&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Pale'/>
+      </div>
+      <div class="Y_CS">
+        <i class="material-icons" style="font-size:60px;color:white">computer</i>
+        <div class="About_me_box_text">
+          <h2>Introduction</h2>
+          <br>
+          <p>Hi! My name is Lucy Murphy. I am a highschool student who is intrested in computer science. I am relatively new to computer science and have olny been seriously involved in it for about two years. Despite my short experience, I have fallen in love with computer science. Never has a subject been so interesting to me. I spend most of my free time messing around and trying to make and learn new things with computer science.</p>
+        </div>
+      </div>
+      <div class="education">
+        <i class='fas fa-pencil-alt' style='font-size:60px;color:White'></i>
+        <div class="About_me_box_text">
+          <h2>Education</h2>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <div class="Dreams">
+        <i class='fas fa-rocket' style='font-size:60px;color:White'></i>
+        <div class="About_me_box_text">
+          <h2>Dreams</h2>
+          <br>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+
+    </div>
+    <h2 class = "SectionTitle">Contact Me!</h2>
+    <div class="container">
+      <form method="post" action="contact.php">
+
+        <label for="fname">First Name</label>
+        <input type="text" class = response_box id="fname" name="firstname" placeholder="Wally">
+
+        <label for="lname">Last Name</label>
+        <input class = response_box type="text" id="lname" name="lastname" placeholder="Smurph">
+
+        <label for="email">Email</label>
+        <input class = response_box type="text" id="email" name="email" placeholder="wallytheduck@gmail.com">
+
+        <label for="subject">Subject</label>
+        <input class = response_box type="text" id="subject" name="subject" placeholder="Just Want To Chat">
+
+        <label for="message">Message</label>
+        <textarea class = response_box id="message" name="message" placeholder="Howdy..." style="height:200px"></textarea>
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
+
   </body>
 </html>
 
+<!--
 
+<br>HTML/CSS
+<br>MIT App Inventor
+<br>Basics of Hardware
+<br>Basics of Blockchain
+<br>Web Design
+<br>Digital Art and Design -->
 <script>
   var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
