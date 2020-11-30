@@ -5,310 +5,354 @@
 
 
 <html>
-<style>
-  *{
-    margin: 0;
-    padding: 0;
+ <style>
+ *{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: hsl(227, 90%, 99%);
+  font-family: Helvetica;
+}
+.TopBox{
+  width:100%;
+  background-color: #4B5281;
+  color:#FFFFFF;
+  font-family: Helvetica;
+  text-align: center;
+}
+
+.navContain{
+  display: none;
+}
+
+.NavAndName h3{
+  text-align: left;
+  font-size: 30px;
+  padding-bottom:40px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.accentPeriod{
+  color:#FF9F1C;
+}
+
+.picture_of_avatar{
+  width:100%;
+  margin-bottom: 20px;
+}
+
+.typingText{
+  font-size: 25px;
+  font-family: monospace;
+  margin-bottom: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.ContactMeBUtton{
+  background-color: #FF9F1C;
+  color:#FFFFFF;
+  padding:15px;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 25px;
+  margin-bottom: 60px;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+.wrapper{
+  width:100%;
+}
+
+
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin:auto;
+}
+
+.column2 {
+  float: left;
+  width: 33.3%;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin:auto;
+}
+
+.SectionTitle{
+  color: #4B5281;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.projectGallaryBox{
+  width:90%;
+  margin:auto;
+  height: 150px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.projectGallaryBoxCovid{
+  width:90%;
+  margin:auto;
+  height: 150px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-image: url("covid19appBack.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.projectGallaryBoxLittleAdNet{
+  width:90%;
+  margin:auto;
+  height: 150px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-image: url("littleadventures.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.projectGallaryBoxPoke{
+  width:90%;
+  margin:auto;
+  height: 150px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-image: url("pokemonPopularity.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.thumbnails{
+  width:95%;
+  margin:auto;
+}
+.tumbHoverCover{
+  border-radius: 15px;
+  background-color: #4B5281;
+  height: 100%;
+  width: 100%;
+  opacity: 0%;
+}
+
+.projectTitle {
+  padding-top: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 20px;
+  color:#FFFFFF;
+}
+
+.tumbHoverCover h5{
+  color: #FF9F1C;
+  font-size: 19px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+
+.tumbHoverCover:hover{
+  animation: 1s thumbnailTitleCover;
+  animation-fill-mode: forwards;
+}
+
+.SkillsGallaryBoxDR{
+  width:90%;
+  margin:auto;
+  height: 100px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-image: url("racket-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.SkillsGallaryBox{
+  width:90%;
+  margin:auto;
+  height: 100px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
+
+}
+
+
+.SkillsGallaryBoxNet{
+  width:90%;
+  margin:auto;
+  height: 100px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-image: url("netlogologo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.SkillsGallaryBoxPy{
+  width:90%;
+  margin:auto;
+  height: 100px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-image: url("Python.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.SkillsGallaryBoxHtml{
+  width:90%;
+  margin:auto;
+  height: 100px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-image: url("html_logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.SkillsGallaryBoxCSS{
+  width:90%;
+  margin:auto;
+  height: 100px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-image: url("CSS_logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.SkillsGallaryBoxMITAPP{
+  width:90%;
+  margin:auto;
+  height: 100px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-image: url("MITlogo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tumbHoverCoverSkills{
+  border-radius: 15px;
+  background-color: #FF9F1C;
+  height: 100%;
+  width: 100%;
+  opacity: 0%;
+}
+
+.tumbHoverCoverSkills:hover{
+  animation: 1s thumbnailTitleCover;
+  animation-fill-mode: forwards;
+}
+.Y_CS{
+  width:90%;
+  margin:auto;
+  background-color: #EE596A;
+  box-shadow:  5px 5px 16px #FBDADE,
+              -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color:#ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 25px;
   }
 
-  body{
-    background-color: hsl(227, 90%, 99%);
-    font-family: Helvetica;
-  }
-  .TopBox{
-    width:100%;
-    background-color: #4B5281;
-    color:#FFFFFF;
-    font-family: Helvetica;
-    text-align: center;
-  }
-
-  .navButtons{
-    display: none;
-  }
-
-  .NavAndName h3{
-    text-align: left;
-    font-size: 30px;
-    padding-bottom:40px;
-    padding-top: 20px;
-    padding-left: 20px;
-  }
-
-  .accentPeriod{
-    color:#FF9F1C;
-  }
-
-  .picture_of_avatar{
-    width:100%;
-    margin-bottom: 20px;
-  }
-
-  .typingText{
-    font-size: 25px;
-    font-family: monospace;
-    margin-bottom: 60px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .ContactMeBUtton{
-    background-color: #FF9F1C;
-    color:#FFFFFF;
-    padding:15px;
-    font-size: 20px;
-    border: 0px;
-    border-radius: 25px;
-    margin-bottom: 60px;
-    font-family: Helvetica;
-    font-weight: bold;
-  }
-  .wrapper{
-    width:100%;
-  }
-
-
-
-  .column {
-    float: left;
-    width: 50%;
-  }
-
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    margin:auto;
-  }
-
-  .column2 {
-    float: left;
-    width: 33.3%;
-  }
-
-  /* Clear floats after the columns */
-  .row2:after {
-    content: "";
-    display: table;
-    clear: both;
-    margin:auto;
-  }
-
-  .SectionTitle{
-    color: #4B5281;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    font-size: 30px;
-  }
-  .projectGallaryBox{
-    width:90%;
-    margin:auto;
-    height: 150px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-  }
-
-  .projectGallaryBoxCovid{
-    width:90%;
-    margin:auto;
-    height: 150px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    background-image: url("img/covid19appBack.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .projectGallaryBoxLittleAdNet{
-    width:90%;
-    margin:auto;
-    height: 150px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    background-image: url("img/littleadventures.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .projectGallaryBoxPoke{
-    width:90%;
-    margin:auto;
-    height: 150px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    background-image: url("img/pokemonPopularity.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .thumbnails{
-    width:95%;
-    margin:auto;
-  }
-  .tumbHoverCover{
-    border-radius: 15px;
-    background-color: #4B5281;
-    height: 100%;
-    width: 100%;
+@keyframes thumbnailTitleCover {
+  0%{
     opacity: 0%;
   }
-
-  .projectTitle {
-    padding-top: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 20px;
-    color:#FFFFFF;
+  10%{
+    opacity: 10%;
   }
-
-  .tumbHoverCover h5{
-    color: #FF9F1C;
-    font-size: 19px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
+  20%{
+    opacity: 20%;
   }
-
-  .tumbHoverCover:hover{
-    animation: 1s thumbnailTitleCover;
-    animation-fill-mode: forwards;
+  30%{
+    opacity: 30%;
   }
+  40%{
+    opacity: 40%;
+  }
+  50%{
+    opacity: 50%;
+  }
+  100%{
+    opacity: 85%;
+  }
+}
+@media only screen and (min-width: 768px) {}
 
-  .SkillsGallaryBoxDR{
+@media only screen and (min-width: 1000px) {}
+
+.Dreams{
     width:90%;
     margin:auto;
-    height: 100px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    text-align: center;
-    background-image: url("img/racket-logo.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .SkillsGallaryBox{
-    width:90%;
-    margin:auto;
-    height: 100px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    text-align: center;
-
-  }
-
-
-  .SkillsGallaryBoxNet{
-    width:90%;
-    margin:auto;
-    height: 100px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    text-align: center;
-    background-image: url("img/netlogologo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .SkillsGallaryBoxPy{
-    width:90%;
-    margin:auto;
-    height: 100px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    text-align: center;
-    background-image: url("img/Python.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .SkillsGallaryBoxHtml{
-    width:90%;
-    margin:auto;
-    height: 100px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    text-align: center;
-    background-image: url("img/html_logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .SkillsGallaryBoxCSS{
-    width:90%;
-    margin:auto;
-    height: 100px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    text-align: center;
-    background-image: url("img/CSS_logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .SkillsGallaryBoxMITAPP{
-    width:90%;
-    margin:auto;
-    height: 100px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    text-align: center;
-    background-image: url("img/MITlogo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .tumbHoverCoverSkills{
-    border-radius: 15px;
-    background-color: #FF9F1C;
-    height: 100%;
-    width: 100%;
-    opacity: 0%;
-  }
-
-  .tumbHoverCoverSkills:hover{
-    animation: 1s thumbnailTitleCover;
-    animation-fill-mode: forwards;
-  }
-  .Y_CS{
-    width:90%;
-    margin:auto;
-    background-color: #EE596A;
-    box-shadow:  5px 5px 16px #F3909C,
+    background-color: #2EC4B6;
+    box-shadow:  5px 5px 16px #CDF3F0 ,
                 -5px -5px 16px #ffffff;
     margin-bottom: 20px;
     border-radius: 15px;
@@ -319,40 +363,13 @@
     padding-top: 20px;
     padding-bottom: 20px;
     line-height: 25px;
-    }
-
-  @keyframes thumbnailTitleCover {
-    0%{
-      opacity: 0%;
-    }
-    10%{
-      opacity: 10%;
-    }
-    20%{
-      opacity: 20%;
-    }
-    30%{
-      opacity: 30%;
-    }
-    40%{
-      opacity: 40%;
-    }
-    50%{
-      opacity: 50%;
-    }
-    100%{
-      opacity: 85%;
-    }
   }
-  @media only screen and (min-width: 768px) {}
 
-  @media only screen and (min-width: 1000px) {}
-
-  .Dreams{
+.education{
       width:90%;
       margin:auto;
-      background-color: #2EC4B6;
-      box-shadow:  5px 5px 16px #8BE4DB ,
+      background-color: #FF9F1C;
+      box-shadow:  5px 5px 16px #FFE6C2,
                   -5px -5px 16px #ffffff;
       margin-bottom: 20px;
       border-radius: 15px;
@@ -364,468 +381,659 @@
       padding-bottom: 20px;
       line-height: 25px;
     }
-
-  .education{
-        width:90%;
-        margin:auto;
-        background-color: #FF9F1C;
-        box-shadow:  5px 5px 16px #FFE6C2,
-                    -5px -5px 16px #ffffff;
-        margin-bottom: 20px;
-        border-radius: 15px;
-        background-repeat: no-repeat;
-        background-position: center;
-        text-align: center;
-        color:#ffffff;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        line-height: 25px;
-      }
-  .About_me_box_text{
-      margin: 20px;
-    }
-  .picture_of_avatar_2{
-      text-align: center;
-    }
-  *{
-    margin: 0;
-    padding: 0;
+.About_me_box_text{
+    margin: 20px;
   }
-
-  body{
-    background-color: hsl(227, 90%, 99%);
-    font-family: Helvetica;
-  }
-  .TopBox{
-    width:100%;
-    background-color: #4B5281;
-    color:#FFFFFF;
-    font-family: Helvetica;
+.picture_of_avatar_2{
     text-align: center;
   }
+*{
+  margin: 0;
+  padding: 0;
+}
 
-  .navButtons{
-    display: none;
+body{
+  background-color: hsl(227, 90%, 99%);
+  font-family: Helvetica;
+}
+.TopBox{
+  width:100%;
+  background-color: #4B5281;
+  color:#FFFFFF;
+  font-family: Helvetica;
+  text-align: center;
+}
+
+.navButtons{
+  display: none;
+}
+
+.NavAndName h3{
+  text-align: left;
+  font-size: 30px;
+  padding-bottom:40px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.accentPeriod{
+  color:#FF9F1C;
+}
+
+.picture_of_avatar{
+  width:100%;
+  margin-bottom: 20px;
+}
+
+.typingText{
+  font-size: 25px;
+  font-family: monospace;
+  margin-bottom: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.ContactMeBUtton{
+  background-color: #FF9F1C;
+  color:#FFFFFF;
+  padding:15px;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 25px;
+  margin-bottom: 60px;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+.ContactMeBUtton a{
+  background-color: #FF9F1C;
+  color:#FFFFFF;
+  padding:15px;
+  font-size: 20px;
+  border: 0px;
+  border-radius: 25px;
+  margin-bottom: 60px;
+  font-family: Helvetica;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+.wrapper{
+  width:100%;
+}
+
+
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin:auto;
+}
+
+.column2 {
+  float: left;
+  width: 33.3%;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin:auto;
+}
+
+.SectionTitle{
+  color: #4B5281;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.projectGallaryBox{
+  width:90%;
+  margin:auto;
+  height: 150px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.projectGallaryBoxCovid{
+  width:90%;
+  margin:auto;
+  height: 150px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-image: url("covid19appBack.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.projectGallaryBoxMap{
+  width:90%;
+  margin:auto;
+  height: 150px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-image: url("mapItDriveItProto.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.projectGallaryBoxLittleAdNet{
+  width:90%;
+  margin:auto;
+  height: 150px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-image: url("littleadventures.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.projectGallaryBoxPoke{
+  width:90%;
+  margin:auto;
+  height: 150px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-image: url("pokemonPopularity.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.projectGallaryBoxFish{
+  width:90%;
+  margin:auto;
+  height: 150px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  background-image: url("GoFIshProto.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.thumbnails{
+  width:95%;
+  margin:auto;
+}
+.tumbHoverCover{
+  border-radius: 15px;
+  background-color: #4B5281;
+  height: 100%;
+  width: 100%;
+  opacity: 0%;
+}
+
+.projectTitle {
+  padding-top: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 20px;
+  color:#FFFFFF;
+}
+
+.tumbHoverCover h5{
+  color: #FF9F1C;
+  font-size: 19px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+
+.tumbHoverCover:hover{
+  animation: 1s thumbnailTitleCover;
+  animation-fill-mode: forwards;
+}
+
+.SkillsGallaryBoxDR{
+  width:90%;
+  margin:auto;
+  height: 100px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-image: url("racket-logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.SkillsGallaryBox{
+  width:90%;
+  margin:auto;
+  height: 100px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
+
+}
+
+
+.SkillsGallaryBoxNet{
+  width:90%;
+  margin:auto;
+  height: 100px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-image: url("netlogologo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.SkillsGallaryBoxPy{
+  width:90%;
+  margin:auto;
+  height: 100px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-image: url("Python.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.SkillsGallaryBoxHtml{
+  width:90%;
+  margin:auto;
+  height: 100px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-image: url("html_logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.SkillsGallaryBoxCSS{
+  width:90%;
+  margin:auto;
+  height: 100px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-image: url("CSS_logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.SkillsGallaryBoxMITAPP{
+  width:90%;
+  margin:auto;
+  height: 100px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-image: url("MITlogo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tumbHoverCoverSkills{
+  border-radius: 15px;
+  background-color: #FF9F1C;
+  height: 100%;
+  width: 100%;
+  opacity: 0%;
+}
+
+.tumbHoverCoverSkills:hover{
+  animation: 1s thumbnailTitleCover;
+  animation-fill-mode: forwards;
+}
+
+.tumbHoverCover button{
+  font-size:24px;
+  color:#FFFFFF;
+  background:#4B5281;
+  border:0px;
+  margin-left:80%;
+}
+.tumbHoverCover button:hover{
+  color: #FF9F1C;
+}
+
+
+/* CONTACT form */
+
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border-radius: 10px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /*Top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  border-color:#FFFFFF;
+  border: 0px;
+  background-color: #FFFFFF;
+  box-shadow:  5px 5px 16px #ced5db,
+             -5px -5px 16px #ffffff;
+  font-family: Helvetica;
+  color: #707070;
+}
+
+.contactForm label{
+  color: #4B5281;
+}
+
+input[type=text], select, textarea:focus{
+   outline: none;
+}
+
+.response_box:hover{
+  border-style: solid;
+  border-bottom-width: 5px;
+  border-left-width: 5px;
+  border-color: #FF9F1C;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #FF9F1C;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #786568;
+}
+
+input[type=submit]:active {
+  background-color: #4B5281;
+}
+
+.container {
+  border-radius: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.submit_btn{
+  text-align: center;
+}
+
+.warningFormLabel{
+  text-align: center;
+  margin-top:20px;
+  font-size: 10px;
+  color:#4B5281;
+}
+
+/* FOOTER */
+.footer{
+  width:100vw;
+  display:block;
+  overflow:hidden;
+  padding: 70px 0;
+  box-sizing:border-box;
+  background-color: #4B5281;
+}
+
+.inner_footer{
+  display:block;
+  margin: 0 auto;
+  width:100%;
+  height: 100%;
+}
+
+.inner_footer .logo{
+  color:white;
+  float:left;
+  width:35%;
+  height: 100%;
+  display: block;
+  margin-left: 20px;
+}
+
+.inner_footer .footer_third{
+  width: 33%;
+  margin-right:10px;
+  float:left;
+  height: 100%;
+}
+
+.inner_footer .footer_third:last-child{
+  .margin-right: 0;
+}
+
+.inner_footer .footer_third h1{
+  font-family: Helvetica;
+  font-size: 22px;
+  color: #FF9F1C;
+  display:block;
+  width:100%;
+  margin-bottom:20px;
+}
+
+.inner_footer .footer_third a{
+  font-family: Helvetica;
+  font-size: 15px;
+  color: white;
+  display:block;
+  width:100%;
+  margin-bottom:20px;
+}
+
+.navContain{
+  width:100%;
+  text-align: center;
+  opacity: 99%;
+
+
+}
+nav ul ul {
+display: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+
+}
+nav ul {
+background: #FFFFFF;
+padding: 0 20px;
+border-radius: 0px;
+border-bottom-right-radius: 20px;
+border-bottom-left-radius: 20px;
+list-style: none;
+position: relative;
+display: inline-table;
+
+}
+nav ul:after {
+  content: ""; clear: both; display: block;
+
+}
+
+nav ul li {
+float: left;
+ line-height: 30px;
+
+}
+nav ul li:hover {
+  color: #FF9F1C;
+}
+  nav ul li:hover a {
+     color: #FF9F1C;
+
   }
 
-  .NavAndName h3{
-    text-align: left;
-    font-size: 30px;
-    padding-bottom:40px;
-    padding-top: 20px;
-    padding-left: 20px;
-  }
+nav ul li a {
+  display: block; padding: 25px 40px;
+  color: #4B5281; text-decoration: none;
 
-  .accentPeriod{
-    color:#FF9F1C;
-  }
+}
 
-  .picture_of_avatar{
-    width:100%;
-    margin-bottom: 20px;
-  }
+nav ul ul {
+background: #FFFFFF; border-radius: 0px; padding: 0;
+position: absolute; top: 100%;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+nav ul ul li {
+  float: none;
+  border-top: 1px solid #6b727c;
+  border-bottom: 1px solid #575f6a;
+  position: relative;
+  color:#4B5281;
 
-  .typingText{
-    font-size: 25px;
-    font-family: monospace;
-    margin-bottom: 60px;
-    margin-left: 20px;
-    margin-right: 20px;
+}
+  nav ul ul li a {
+    padding: 15px 40px;
+    color: #FFFFFF;
+    color:#4B5281;
+    border-radius: 20px;
   }
+    nav ul ul li a:hover {
+      background: #FFFFFF;
+      color:#4B5281;
+      border-radius: 20px;
+    }
 
-  .ContactMeBUtton{
-    background-color: #FF9F1C;
-    color:#FFFFFF;
-    padding:15px;
-    font-size: 20px;
-    border: 0px;
-    border-radius: 25px;
-    margin-bottom: 60px;
-    font-family: Helvetica;
-    font-weight: bold;
-  }
-  .wrapper{
-    width:100%;
+    nav ul ul ul {
+    position: absolute; left: 100%; top:0;
+    border-radius: 20px;
   }
 
 
-
-  .column {
-    float: left;
-    width: 50%;
-  }
-
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    margin:auto;
-  }
-
-  .column2 {
-    float: left;
-    width: 33.3%;
-  }
-
-  /* Clear floats after the columns */
-  .row2:after {
-    content: "";
-    display: table;
-    clear: both;
-    margin:auto;
-  }
-
-  .SectionTitle{
-    color: #4B5281;
-    margin-top: 30px;
-    margin-left: 30px;
-    margin-bottom: 30px;
-    font-size: 30px;
-  }
-  .projectGallaryBox{
-    width:90%;
-    margin:auto;
-    height: 150px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-  }
-
-  .projectGallaryBoxCovid{
-    width:90%;
-    margin:auto;
-    height: 150px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    background-image: url("img/covid19appBack.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .projectGallaryBoxMap{
-    width:90%;
-    margin:auto;
-    height: 150px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    background-image: url("img/mapItDriveItProto.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .projectGallaryBoxLittleAdNet{
-    width:90%;
-    margin:auto;
-    height: 150px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    background-image: url("img/littleadventures.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .projectGallaryBoxPoke{
-    width:90%;
-    margin:auto;
-    height: 150px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    background-image: url("img/pokemonPopularity.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-
-  .projectGallaryBoxFish{
-    width:90%;
-    margin:auto;
-    height: 150px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    background-image: url("img/GoFIshProto.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .thumbnails{
-    width:95%;
-    margin:auto;
-  }
-  .tumbHoverCover{
-    border-radius: 15px;
-    background-color: #4B5281;
-    height: 100%;
-    width: 100%;
+@keyframes thumbnailTitleCover {
+  0%{
     opacity: 0%;
   }
-
-  .projectTitle {
-    padding-top: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-size: 20px;
-    color:#FFFFFF;
+  10%{
+    opacity: 10%;
   }
-
-  .tumbHoverCover h5{
-    color: #FF9F1C;
-    font-size: 19px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
+  20%{
+    opacity: 20%;
   }
-
-  .tumbHoverCover:hover{
-    animation: 1s thumbnailTitleCover;
-    animation-fill-mode: forwards;
+  30%{
+    opacity: 30%;
   }
-
-  .SkillsGallaryBoxDR{
-    width:90%;
-    margin:auto;
-    height: 100px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    text-align: center;
-    background-image: url("img/racket-logo.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  40%{
+    opacity: 40%;
   }
-
-  .SkillsGallaryBox{
-    width:90%;
-    margin:auto;
-    height: 100px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    text-align: center;
-
+  50%{
+    opacity: 50%;
   }
-
-
-  .SkillsGallaryBoxNet{
-    width:90%;
-    margin:auto;
-    height: 100px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    text-align: center;
-    background-image: url("img/netlogologo.png");
-    background-repeat: no-repeat;
-    background-position: center;
+  100%{
+    opacity: 85%;
   }
+}
+@media only screen and (min-width: 768px) {
 
-  .SkillsGallaryBoxPy{
-    width:90%;
-    margin:auto;
-    height: 100px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    text-align: center;
-    background-image: url("img/Python.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+}
 
-  .SkillsGallaryBoxHtml{
-    width:90%;
-    margin:auto;
-    height: 100px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    text-align: center;
-    background-image: url("img/html_logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+@media only screen and (min-width: 1000px) {
+  .navContain{display: block;}
+}
 
-  .SkillsGallaryBoxCSS{
-    width:90%;
-    margin:auto;
-    height: 100px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    text-align: center;
-    background-image: url("img/CSS_logo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .SkillsGallaryBoxMITAPP{
-    width:90%;
-    margin:auto;
-    height: 100px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    text-align: center;
-    background-image: url("img/MITlogo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .tumbHoverCoverSkills{
-    border-radius: 15px;
-    background-color: #FF9F1C;
-    height: 100%;
-    width: 100%;
-    opacity: 0%;
-  }
-
-  .tumbHoverCoverSkills:hover{
-    animation: 1s thumbnailTitleCover;
-    animation-fill-mode: forwards;
-  }
-
-  .tumbHoverCover button{
-    font-size:24px;
-    color:#FFFFFF;
-    background:#4B5281;
-    border:0px;
-    margin-left:80%;
-  }
-  .tumbHoverCover button:hover{
-    color: #FF9F1C;
-  }
-
-
-  /* CONTACT form 
-
-
-  input[type=text], select, textarea {
-    width: 100%; 
-    padding: 12px; 
-    border-radius: 10px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
-    resize: vertical; 
-    border-color:#FFFFFF;
-    border: 0px;
-    background-color: #FFFFFF;
-    box-shadow:  5px 5px 16px #ced5db,
-               -5px -5px 16px #ffffff;
-    font-family: Helvetica;
-    color: #707070;
-  }
-
-  .contactForm label{
-    color: #4B5281;
-  }
-
-  input[type=text], select, textarea:focus{
-     outline: none;
-  }
-
-  .response_box:hover{
-    border-style: solid;
-    border-bottom-width: 5px;
-    border-left-width: 5px;
-    border-color: #FF9F1C;
-  }
-
-  input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-
-  .container {
-    border-radius: 5px;
-    padding: 20px;
-  } */
-
-  @keyframes thumbnailTitleCover {
-    0%{
-      opacity: 0%;
-    }
-    10%{
-      opacity: 10%;
-    }
-    20%{
-      opacity: 20%;
-    }
-    30%{
-      opacity: 30%;
-    }
-    40%{
-      opacity: 40%;
-    }
-    50%{
-      opacity: 50%;
-    }
-    100%{
-      opacity: 85%;
-    }
-  }
-  @media only screen and (min-width: 768px) {}
-
-  @media only screen and (min-width: 1000px) {}
-</style>
+ </style>
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <head>
     <meta charset="utf-8">
     <title></title>
     <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfoliostylec.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body>
     <div class="TopBox">
-      <div class="NavAndName">
-        <h3>MURPH<span class="accentPeriod">.<h3></span>
-          <span class = "navButtons">
-            <a href="#">Home </a>
-            <a href="#">Netlogo</a>
-            <a href="#">Pyton</a>
-            <a href="#">Web Design</a>
-            <a href="#">MIT APP inventor</a>
-         </span>
+
+      <div class="navContain">
+        <nav>
+        	<ul>
+        		<li><a href="#" style="color:#4B5281;font-family: Helvetica;font-size: 30px;"><b>MURPH<span class="accentPeriod">.</b></li>
+
+  <!-- ignore -->
+          		<ul>
+        				<li><a href="#">Netlogo</a></li>
+        			</ul>
+        		</li>
+  <!-- done ignore -->
+
+            <li><a href="#">Netlogo</a>
+              <ul>
+                <li><a href="#">Little Adventures</a></li>
+                <li><a href="#">Go Fish! (race)</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Python</a>
+              <ul>
+                <li><a href="#">Pokemon Popularity</a></li>
+                <li><a href="#">Dinos</a></li>
+              </ul>
+            </li>
+            <li><a href="#">HTML/CSS</a>
+              <ul>
+                <li><a href="#">Dinos Website</a></li>
+              </ul>
+            </li>
+            <li><a href="#">APP Inventor</a>
+              <ul>
+                <li><a href="#">DuckPond</a></li>
+                <li><a href="#">Little Adventures</a></li>
+              </ul>
+            </li>
+            <li><a href="#">VEX VR</a>
+              <ul>
+                <li><a href="#">Map It, Drive It!</a></li>
+              </ul>
+            </li>
+        	</ul>
+        </nav>
       </div>
       <div class ="picture_of_avatar">
         <img src='https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight2&accessoriesType=Round&hairColor=Blonde&facialHairType=Blank&clotheType=CollarSweater&clotheColor=White&eyeType=Side&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Pale'/>
@@ -838,7 +1046,7 @@
              data-rotate='[ "python programmer.", "web-designer.", "netlogo mega-fan.", "rubber duck enthusiast.", "digital art creator." ]'></span>
         </h4>
       </div>
-      <button type="button" class="ContactMeBUtton" href="#">Contact Me!</button>
+      <button type="button" class="ContactMeBUtton"> <a href="#contact">Contact Me!</a> </button>
     </div>
     <div class="wrapper">
       <h2 class = "SectionTitle">Recent Projects</h2>
@@ -1041,14 +1249,45 @@
     </div>
     <h2 class = "SectionTitle">Contact Me!</h2>
     <div class="container">
-      <form role="form" action="contact.php" method="post">
-      <input name="name" required="required" type="text" placeholder="Enter Your Name" />
-      <input name="email" required="required" type="email" placeholder="Email ID"/>
-      <input name="mobile" required="required" type="text" placeholder="Enter Mobile No"/>
-      <textarea name="message" placeholder="Enter Any Message"></textarea>
-      <input name="submit" type="submit" value="Send a Mail" /></form>
-    </div>
+      <form class="contactForm" id ="contact">
 
+        <label for="fname">First Name</label>
+        <input type="text" class = response_box id="fname" name="firstname" placeholder="Wally">
+
+        <label for="lname">Last Name</label>
+        <input class = response_box type="text" id="lname" name="lastname" placeholder="Smurph">
+
+        <label for="email">Email</label>
+        <input class = response_box type="text" id="email" name="email" placeholder="wallytheduck@gmail.com">
+
+        <label for="subject">Subject</label>
+        <input class = response_box type="text" id="subject" name="subject" placeholder="Just Want To Chat">
+
+        <label for="message">Message</label>
+        <textarea class = response_box id="message" name="message" placeholder="Howdy..." style="height:200px"></textarea>
+        <div class = "submit_btn">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+      <div class ="warningFormLabel">
+        <p>"GitHub pages" only allows static content, so this is a prototype form that will not send an email.</p>
+      </div>
+    </div>
+    <br>
+    <div class = "footer">
+      <div class="inner_footer">
+        <div class="logo">
+          <h3>MURPH<span class="accentPeriod">.<h3></span>
+        </div>
+
+        <div class="footer_third">
+          <h1>Contact</h1>
+          <a>lucyrosemurphy@gmail.com</a>
+          <a>+1 404 426 2610</a>
+          <a href = "https://www.instagram.com/lucy.rose_murphy/"><i class='fab fa-instagram' style='font-size:20px;color:white'><span class="insta" style="  font-family: Helvetica;font-size: 15px;color: white;">lucy.rose_murphy</span></i></a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 
@@ -1117,4 +1356,5 @@
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
   };
+  $(".flexnav").flexNav();
 </script>
