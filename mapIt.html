@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<!-- COLORS -->
+<!--Blue/Main color:4B5281-->
+<!--Orange/accent:FF9F1C-->
+
+
+<html>
+<style>
+body{
+  background-color: hsl(227, 90%, 99%);
+  font-family: Helvetica;
+  overflow-x: hidden;
+  margin: 0px;
+  color:#4B5281;
+}
+.navContain{
+  display: none;
+}
+
+.TopBoxSmall{
+  width:100%;
+  background-color: #4B5281;
+  color:#FFFFFF;
+  font-family: Helvetica;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+.TopBox{
+  width:100%;
+  background-color: #4B5281;
+  color:#FFFFFF;
+  font-family: Helvetica;
+  text-align: center;
+}
+.footer{
+  width:100vw;
+  display:block;
+  overflow:hidden;
+  padding: 70px 0;
+  box-sizing:border-box;
+  background-color: #4B5281;
+}
+
+.inner_footer{
+  display:block;
+  margin: 0 auto;
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.inner_footer .logo{
+  color:white;
+  float:left;
+  width:35%;
+  height: 100%;
+  display: block;
+  margin-left: 20px;
+}
+
+.inner_footer .footer_third{
+  width: 33%;
+  margin-right:10px;
+  float:left;
+  height: 100%;
+}
+
+.inner_footer .footer_third:last-child{
+  .margin-right: 0;
+}
+
+.inner_footer .footer_third h1{
+  font-family: Helvetica;
+  font-size: 22px;
+  color: #FF9F1C;
+  display:block;
+  width:100%;
+  margin-bottom:20px;
+}
+
+.inner_footer .footer_third a{
+  font-family: Helvetica;
+  font-size: 15px;
+  color: white;
+  display:block;
+  width:100%;
+  margin-bottom:20px;
+}
+
+.navContain{
+  width:100%;
+  text-align: center;
+  opacity: 99%;
+
+
+}
+nav ul ul {
+display: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+
+}
+nav ul {
+/* this is whats making the nav lean left */
+
+border-radius: 0px;
+list-style: none;
+position: relative;
+display: inline-table;
+margin: auto;
+margin-left: auto;
+margin-left: auto;
+}
+nav ul:after {
+  content: ""; clear: both; display: block;
+
+}
+
+nav ul li {
+float: left;
+ line-height: 30px;
+ font-size: 16px;
+
+}
+nav ul li:hover {
+  color: #FF9F1C;
+}
+  nav ul li:hover a {
+     color: #FF9F1C;
+
+  }
+
+nav ul li a {
+  display: block; padding: 10px 40px;
+  color: #FFFFFF; text-decoration: none;
+
+}
+
+nav ul ul {
+background: #4B5281; border-radius: 0px; padding: 0;
+position: absolute; top: 100%;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+nav ul ul li {
+  float: none;
+  border-top: 1px solid #FFFFFF;
+  position: relative;
+  color:#FFFFFF;
+
+}
+  nav ul ul li a {
+    padding: 15px 40px;
+    color: #FFFFFF;
+    color:#FFFFFF;
+    border-radius: 20px;
+  }
+    nav ul ul li a:hover {
+
+      color:white;
+      border-radius: 20px;
+    }
+
+    nav ul ul ul {
+    position: absolute; left: 100%; top:0;
+    border-radius: 20px;
+  }
+
+  .accentPeriod{
+    color:#FF9F1C;
+  }
+
+  .content_box{
+    width:90%;
+    margin:auto;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    margin: 20px;
+    margin-left: 20px;
+
+  }
+  .content_text{
+    margin: 20px;
+    padding-top:10px;
+    padding-bottom: 20px;
+    line-height: 25px;
+    margin-bottom: 0;
+  }
+  .content_box_clear{
+    width:90%;
+    margin:auto;
+    background-color: #FFFFFF;
+
+    margin-bottom: 20px;
+    border-radius: 15px;
+    margin: 20px;
+
+  }
+  .content_box_clear h1{
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .proto_2{
+    width: 70%;
+    margin-left: auto;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin:auto;
+  }
+
+  .column {
+    float: left;
+    width: 100%;
+    text-align: center;
+
+  }
+
+
+  .column img{
+    border-radius: 10px;
+  }
+
+  .spacer{
+    color:#FFFFFF
+  }
+
+  .indent1{
+    margin: 0;
+    margin-left: 10px;
+    font-family: monospace;
+    margin-right: 10px;
+  }
+ .no_indent{
+   font-family: monospace;
+   margin-right: 10px;
+ }
+  .indent2{
+    margin: 0;
+    margin-left: 20px;
+    font-family: monospace;
+    margin-right: 10px;
+  }
+
+  .indent3{
+    margin: 0;
+    margin-left: 30px;
+    font-family: monospace;
+    margin-right: 10px;
+  }
+
+  .indent4{
+    margin: 0;
+    margin-left: 40px;
+    font-family: monospace;
+    margin-right: 10px;
+  }
+  @media only screen and (min-width: 1000px) {
+    .navContain{display: block;}
+    .TopBoxSmall{display: none;}
+  }
+
+  .content_box_clear{
+    width:90%;
+    margin:auto;}
+
+  .content_box{
+      width:90%;
+      margin:auto;
+
+
+    }
+
+    body{
+      background-color: hsl(227, 90%, 99%);
+      font-family: Helvetica;
+      overflow-x: hidden;
+      margin: 0px;
+      color:#4B5281;
+    }
+</style>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  </head>
+  <body>
+    <div class =TopBoxSmall>
+       <a href="#" style="color:white;text-decoration: none;font-family: Helvetica;font-size: 30px; margin-left:20px;"><b>MURPH<span class="accentPeriod">.</b></a>
+    </div>
+    <div class="TopBox">
+
+      <div class="navContain">
+        <nav>
+        	<ul>
+        		<li><a href="#" style="color:white;font-family: Helvetica;font-size: 30px;"><b>MURPH<span class="accentPeriod">.</b></li>
+
+  <!-- ignore -->
+          		<ul>
+        				<li><a href="#">Netlogo</a></li>
+        			</ul>
+        		</li>
+  <!-- done ignore -->
+
+            <li><a href="#">Netlogo</a>
+              <ul>
+                <li><a href="#">Little Adventures</a></li>
+                <li><a href="#">Go Fish! (race)</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Python</a>
+              <ul>
+                <li><a href="#">Pokemon Popularity</a></li>
+                <li><a href="#">Dinos</a></li>
+              </ul>
+            </li>
+            <li><a href="#">HTML/CSS</a>
+              <ul>
+                <li><a href="#">Dinos Website</a></li>
+              </ul>
+            </li>
+            <li><a href="#">APP Inventor</a>
+              <ul>
+                <li><a href="#">DuckPond</a></li>
+                <li><a href="#">Little Adventures</a></li>
+              </ul>
+            </li>
+            <li><a href="#">VEX VR</a>
+              <ul>
+                <li><a href="#">Map It, Drive It!</a></li>
+              </ul>
+            </li>
+        	</ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="content_box_clear">
+      <h1>MAP IT, DRIVE IT!</h1>
+      <div class="prototypes">
+        <div class = proto_1>
+          <img src="img/prototypePath1ForPhone.png" alt="prototype">
+        </div>
+
+        <div class = proto_2>
+          <img src="img/prototypePath2ForPhone.png" alt="prototype" style="align:right;">
+        </div>
+
+          <div class = proto_3>
+            <img src="img/prototypePath3ForPhone.png" alt="prototype">
+          </div>
+      </div>
+    </div>
+
+    <div class="content_box">
+      <div class="content_text">
+        <h2>Project Goal</h2>
+        <p>The goal of this project was to explore the concept of "dead reckoning". This project is not a comprehensive demonstration of the concept; it is reletively simple, but simplifying things is key in gaining a comprehensive understanding. This project could me developed futher to be applicable in the real world. For example there has been a push in companies like amazon, to create robots that follow paths to collect and deleiver things across large warehouses. This project serves as a base for modeling obsticals and walls that the robot would have to go through. </p>
+      </div>
+    </div>
+
+
+
+    <div class="content_box">
+      <div class="content_text">
+        <div class="row">
+          <div class="column"><img src="img/path1.png" alt="prototype"></div>
+          <div class="column"><img src="img/path2.png" alt="prototype"></div>
+          <div class="column"><img src="img/path3.png" alt="prototype"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content_box">
+      <div class="content_text">
+        <span style="color:LimeGreen;">#Lucy Murphy</span>
+        <br><span style="color:LimeGreen;">#Team 3</span>
+        <br><span style="color:LimeGreen;">#CSE pd 2</span>
+        <br><span style="color:LimeGreen;">#2.1.5 -- Map It, Drive It</span>
+        <br><span style="color:LimeGreen;">#2020-11-24</span>
+         <br>
+        <br><span style="color:LimeGreen;">#Creates the basic map outline (black border)</span>
+        <br><span style="color: blue;">def</span> make_my_map(path):
+
+        <div class="indent1">
+           <span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">set_drive_velocity</span>(<span style="color: green;">300</span>, <span style="color: orange;">PERCENT</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">set_turn_velocity</span>(<span style="color: green;">300</span>, <span style="color: orange;">PERCENT</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">1500</span>, <span style="color: orange;">MM</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">RIGHT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">500</span>, <span style="color: orange;">MM</span>)
+           <br><span style="color: teal;">pen</span>.<span style="color: FireBrick;">set_<span style="color: teal;">pen</span>_color</span>(<span style="color: orange;">BLACK</span>)
+           <br><span style="color: teal;">pen</span>.<span style="color: FireBrick;">move</span>(<span style="color: orange;">DOWN</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">1000</span>, <span style="color: orange;">MM</span>)
+           <br><span style="color: blue;">for</span> sides <span style="color: blue;">in</span>  <span style="color: FireBrick;">range</span>(<span style="color: green;">2</span>):
+               <span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">RIGHT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+               <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">1000</span>, <span style="color: orange;">MM</span>)
+        </div>
+           <div class="indent1">
+           <span style="color: blue;">if</span>   path == <span style="color: green;">1</span>:
+           </div>
+
+           <div class="indent2">
+               make_path_<span style="color: green;">1</span>()
+          </div>
+          <div class="indent1">
+           <span style="color: blue;">if</span>   path == <span style="color: green;">2</span>:
+           </div>
+
+           <div class="indent2">
+               make_path_2()
+          </div>
+          <div class="indent1">
+            <span style="color: blue;">if</span>   path == <span style="color: green;">2</span>:
+          </div>
+
+          <div class="indent2">
+               make_path_3()
+          </div>
+          <br>
+        <br><span style="color:LimeGreen;">#function to reduce redundancy, creates a fully colored square in any color inputted</span>
+        <br><span style="color: blue;">def</span> make_square(color):
+
+        <div class="indent1">
+           <span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">set_drive_velocity</span>(<span style="color: green;">100</span>, <span style="color: orange;">PERCENT</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">set_turn_velocity</span>(<span style="color: green;">100</span>, <span style="color: orange;">PERCENT</span>)
+           lines_filled=<span style="color: green;">100</span>
+           <br><span style="color: teal;">pen</span>.<span style="color: FireBrick;">set_<span style="color: teal;">pen</span>_color</span>(color)
+           <br><span style="color: teal;">pen</span>.<span style="color: FireBrick;">move</span>(<span style="color: orange;">DOWN</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">RIGHT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">200</span>, <span style="color: orange;">MM</span>)
+           <br><span style="color: blue;">for</span> sides <span style="color: blue;">in</span>  <span style="color: FireBrick;">range</span>(<span style="color: green;">2</span>):
+        </div>
+           <div class="indent2">
+               <span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">LEFT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+               <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">200</span>, <span style="color: orange;">MM</span>)
+          </div>
+
+
+          <div class="indent1">
+           <span style="color: blue;">for</span> lines <span style="color: blue;">in</span>  <span style="color: FireBrick;">range</span>(<span style="color: green;">10</span>):
+           </div>
+           <div class="indent2">
+               <span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">REVERSE</span>, <span style="color: green;">10</span>, <span style="color: orange;">MM</span>)
+               <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">LEFT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+               <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">200</span>, <span style="color: orange;">MM</span>)
+               <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">LEFT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+               <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">10</span>, <span style="color: orange;">MM</span>)
+               <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">LEFT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+               <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">200</span>, <span style="color: orange;">MM</span>)
+               <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">LEFT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+          </div>
+
+           <div class="indent1">
+           <span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_to_heading</span>(<span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+           </div>
+<br>
+<br>
+        <span style="color:LimeGreen;">#Set up grid for first path</span>
+        <br><span style="color: blue;">def</span> make_path_1():
+
+          <div class="indent1">
+           first_path_2d_asth = [
+          </div>
+            <div class="indent2">
+               [<span style="color: green;">2</span>,0,<span style="color: green;">3</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>],
+               <br>[<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>],
+               <br>[<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>],
+               <br>[<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>],
+               <br>[<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">1</span>],
+             </div>
+           <div class="indent1">
+             ]
+
+           col=<span style="color: green;">100</span>
+           <br>row=<span style="color: green;">100</span>
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">REVERSE</span>, <span style="color: green;">200</span>, <span style="color: orange;">MM</span>)
+           <br><span style="color: blue;">while</span>   (row < <span style="color: green;">5</span>):
+           </div>
+
+          <div class="indent2">
+               <span style="color: blue;">while</span>   (col < <span style="color: green;">5</span>):
+          </div>
+          <div class="indent3">
+                   <span style="color: blue;">if</span>   first_path_2d_asth[row][col] == <span style="color: green;">1</span>:
+          </div>
+          <div class="indent4">
+                       make_square(<span style="color: orange;">GREEN</span>)
+          </div>
+          <div class="indent3">
+                   <span style="color: blue;">if</span>   first_path_2d_asth[row][col] == <span style="color: green;">2</span>:
+          </div>
+          <div class="indent4">
+                       make_square(<span style="color: orange;">BLUE</span>)
+          </div>
+          <div class="indent3">
+                   <span style="color: blue;">if</span>   first_path_2d_asth[row][col] == <span style="color: green;">2</span>:
+          </div>
+          <div class="indent4">
+                       make_square(<span style="color: orange;">RED</span>)
+          </div>
+          <div class="indent3">
+                   <span style="color: blue;">if</span>   first_path_2d_asth[row][col] == <span style="color: green;">100</span>:
+          </div>
+          <div class="indent4">
+                       <span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">200</span>, <span style="color: orange;">MM</span>)
+          </div>
+          <div class="indent3">
+                   col += <span style="color: green;">1</span>
+                   <br><span style="color: teal;">pen</span>.<span style="color: FireBrick;">move</span>(<span style="color: orange;">UP</span>)
+          <div class="indent2">
+               row += <span style="color: green;">1</span>
+               <br><span style="color: blue;">if</span>   row < <span style="color: green;">2</span>:
+          </div>
+          <div class="indent3">
+                   <span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">REVERSE</span>, <span style="color: green;">1000</span>, <span style="color: orange;">MM</span>)
+                 </div>
+              <div class="indent2">
+               <span style="color: blue;">else</span>  :
+             </div>
+                <div class="indent3">
+                   <span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">RIGHT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+                   <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">200</span>, <span style="color: orange;">MM</span>)
+                   <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">LEFT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+                   <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">REVERSE</span>, <span style="color: green;">1000</span>, <span style="color: orange;">MM</span>)
+                </div>
+              <div class="indent2">
+               col = <span style="color: green;">100</span>
+             </div>
+          <div class="indent1">
+           go_to_start()
+           <br>path_1_drive()
+          </div>
+<br>
+        <br><span style="color:LimeGreen;">#Set up grid for second path</span>
+        <br><span style="color: blue;">def</span> make_path_2():
+
+        <div class="indent1">
+           second_path_2d_asth = [
+
+               <br>[<span style="color: green;">2</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>],
+               <br>[<span style="color: green;">3</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>],
+               <br>[<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">3</span>],
+               <br>[<span style="color: green;">0</span>,<span style="color: green;">3</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>],
+               <br>[<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">1</span>],
+        </div>
+           <div class="indent1">
+             ]
+           <br>col=<span style="color: green;">100</span>
+           <br>row=<span style="color: green;">100</span>
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">REVERSE</span>, <span style="color: green;">200</span>, <span style="color: orange;">MM</span>)
+           <br><span style="color: blue;">while</span>   (row < <span style="color: green;">5</span>):
+           </div>
+
+           <div class="indent2">
+               <span style="color: blue;">while</span>   (col < <span style="color: green;">5</span>):
+          </div>
+          <div class="indent3">
+                   <span style="color: blue;">if</span>   second_path_2d_asth[row][col] == <span style="color: green;">1</span>:
+          </div>
+                <div class="indent4">
+                       make_square(<span style="color: orange;">GREEN</span>)
+                </div>
+          <div class="indent3">
+                   <span style="color: blue;">if</span>   second_path_2d_asth[row][col] == <span style="color: green;">2</span>:
+                 </div>
+                 <div class="indent4">
+                       make_square(<span style="color: orange;">BLUE</span>)
+                </div>
+         <div class="indent3">
+                   <span style="color: blue;">if</span>   second_path_2d_asth[row][col] == <span style="color: green;">3</span>:
+                 </div>
+                 <div class="indent4">
+                       make_square(<span style="color: orange;">RED</span>)
+                     </div>
+        <div class="indent3">
+                   <span style="color: blue;">if</span>   second_path_2d_asth[row][col] == <span style="color: green;">0</span>:
+                 </div>
+                 <div class="indent4">
+                       <span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">200</span>, <span style="color: orange;">MM</span>)
+                     </div>
+        <div class="indent3">
+                   col += <span style="color: green;">1</span>
+                   <br><span style="color: teal;">pen</span>.<span style="color: FireBrick;">move</span>(<span style="color: orange;">UP</span>)
+                   </div>
+            <div class="indent2">
+               row += <span style="color: green;">1</span>
+               <br><span style="color: blue;">if</span>   row == <span style="color: green;">2</span> or row == <span style="color: green;">2</span> or row == <span style="color: green;">4</span>:
+            </div>
+
+            <div class="indent3">
+                  <span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">REVERSE</span>, <span style="color: green;">1000</span>, <span style="color: orange;">MM</span>)
+                </div>
+          <div class="indent2">
+               <span style="color: blue;">else</span>  :
+          </div>
+
+          <div class="indent3">
+                   <span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">RIGHT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+                   <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">200</span>, <span style="color: orange;">MM</span>)
+                   <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">LEFT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+                   <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">REVERSE</span>, <span style="color: green;">1000</span>, <span style="color: orange;">MM</span>)
+                 </div>
+          <div class="indent2">
+              col = <span style="color: green;">0</span>
+          </div>
+          <div class="indent1">
+           go_to_start()
+           <br>path_2_drive()
+          </div>
+<br>
+<br>
+
+        <br><span style="color:LimeGreen;">#Set up grid for third path</span>
+        <br><span style="color: blue;">def</span> make_path_3():
+
+          <div class="indent1">
+           <br>third_path_2d_asth = [
+           </div>
+           <div class="indent2">
+
+               <br>[<span style="color: green;">1</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>],
+               <br>[<span style="color: green;">3</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>],
+               <br>[<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>],
+               <br>[<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">3</span>,<span style="color: green;">3</span>],
+               <br>[<span style="color: green;">0</span>,<span style="color: green;">3</span>,<span style="color: green;">0</span>,<span style="color: green;">0</span>,<span style="color: green;">2</span>],
+           <br>
+         </div>
+           <div class="indent1">
+             ]
+           <br>col=<span style="color: green;">100</span>
+           <br>row=<span style="color: green;">100</span>
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">REVERSE</span>, <span style="color: green;">200</span>, <span style="color: orange;">MM</span>)
+           <br><span style="color: blue;">while</span>   (row < <span style="color: green;">5</span>):
+           </div>
+
+           <div class="indent2">
+               <span style="color: blue;">while</span>   (col < <span style="color: green;">5</span>):
+            </div>
+
+                   <br><span style="color: blue;">if</span>   third_path_2d_asth[row][col] == <span style="color: green;">1</span>:
+                       <br>make_square(<span style="color: orange;">GREEN</span>)
+                   <br><span style="color: blue;">if</span>   third_path_2d_asth[row][col] == <span style="color: green;">2</span>:
+                       <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_to_heading</span>(<span style="color: green;">100</span>, <span style="color: orange;">DEGREES</span>)
+                       <br>make_square(<span style="color: orange;">BLUE</span>)
+                   <br><span style="color: blue;">if</span>   third_path_2d_asth[row][col] == <span style="color: green;">2</span>:
+                       <br>make_square(<span style="color: orange;">RED</span>)
+                       <br><span style="color: blue;">if</span>   col == <span style="color: green;">2</span> and row == <span style="color: green;">2</span>:
+                           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_to_heading</span>(<span style="color: green;">100</span>, <span style="color: orange;">DEGREES</span>)
+                       <br><span style="color: blue;">if</span>   col == <span style="color: green;">2</span> and row == <span style="color: green;">4</span>:
+                           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_to_heading</span>(<span style="color: green;">100</span>, <span style="color: orange;">DEGREES</span>)
+                   <br><span style="color: blue;">if</span>   third_path_2d_asth[row][col] == <span style="color: green;">100</span>:
+                       <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">200</span>, <span style="color: orange;">MM</span>)
+                   <br>col += <span style="color: green;">1</span>
+                   <br><span style="color: teal;">pen</span>.<span style="color: FireBrick;">move</span>(<span style="color: orange;">UP</span>)
+
+              <div class="indent2">
+               row += <span style="color: green;">1</span>
+               <br><span style="color: blue;">if</span>   row == <span style="color: green;">2</span>:
+             </div>
+                   <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">REVERSE</span>, <span style="color: green;">1000</span>, <span style="color: orange;">MM</span>)
+              <div class="indent2">
+               <br><span style="color: blue;">else</span>  :
+             </div>
+                   <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">RIGHT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+                   <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">200</span>, <span style="color: orange;">MM</span>)
+                   <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">LEFT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+                   <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">REVERSE</span>, <span style="color: green;">1000</span>, <span style="color: orange;">MM</span>)
+              <div class="indent2">
+               <br>col = <span style="color: green;">100</span>
+             </div>
+          <div class="indent1">
+           <br>go_to_start_top()
+           <br>path_3_drive()
+          </div>
+<br>
+        <br><span style="color: blue;">def</span> go_to_start():
+
+        <div class="indent1">
+
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">900</span>, <span style="color: orange;">MM</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">LEFT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">300</span>, <span style="color: orange;">MM</span>)
+         </div>
+<br>
+        <br><span style="color: blue;">def</span> go_to_start_top():
+
+        <div class="indent1">
+
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">100</span>, <span style="color: orange;">MM</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">LEFT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">900</span>, <span style="color: orange;">MM</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_to_heading</span>(<span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+        </div>
+<br>
+<br>
+<br>
+        <br><span style="color: blue;">def</span> path_1_drive():
+
+          <div class="indent1">
+
+           <br><span style="color: teal;">pen</span>.<span style="color: FireBrick;">move</span>(<span style="color: orange;">DOWN</span>)
+           <br><span style="color: teal;">pen</span>.<span style="color: FireBrick;">set_<span style="color: teal;">pen</span>_color</span>(<span style="color: orange;">BLACK</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">LEFT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">400</span>, <span style="color: orange;">MM</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">RIGHT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">400</span>, <span style="color: orange;">MM</span>)
+          </div>
+
+
+        <br><span style="color:LimeGreen;">#Driving instructions</span>
+        <br><span style="color: blue;">def</span> path_2_drive():
+        <div class="indent1">
+
+           <br><span style="color: teal;">pen</span>.<span style="color: FireBrick;">move</span>(<span style="color: orange;">DOWN</span>)
+           <br><span style="color: teal;">pen</span>.<span style="color: FireBrick;">set_<span style="color: teal;">pen</span>_color</span>(<span style="color: orange;">BLACK</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">LEFT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">400</span>, <span style="color: orange;">MM</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">RIGHT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">400</span>, <span style="color: orange;">MM</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">RIGHT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;"><span style="color: green;">200</span></span>, <span style="color: orange;">MM</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">LEFT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">400</span>, <span style="color: orange;">MM</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">LEFT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;"><span style="color: green;">200</span></span>, <span style="color: orange;">MM</span>)
+        </div>
+<br>
+        <br><span style="color:LimeGreen;">#Driving instructions</span>
+        <br><span style="color: blue;">def</span> path_3_drive():
+
+        <div class="indent1">
+           <span style="color: teal;">pen</span>.<span style="color: FireBrick;">move</span>(<span style="color: orange;">DOWN</span>)
+           <br><span style="color: teal;">pen</span>.<span style="color: FireBrick;">set_<span style="color: teal;">pen</span>_color</span>(<span style="color: orange;">BLACK</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">400</span>, <span style="color: orange;">MM</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">RIGHT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">400</span>, <span style="color: orange;">MM</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">turn_for</span>(<span style="color: orange;">LEFT</span>, <span style="color: green;">90</span>, <span style="color: orange;">DEGREES</span>)
+           <br><span style="color: teal;">drivetrain</span>.<span style="color: FireBrick;">drive_for</span>(<span style="color: orange;">FORWARD</span>, <span style="color: green;">400</span>, <span style="color: orange;">MM</span>)
+         </div>
+<br>
+<br>
+        <br>vr_thread(make_my_map(<span style="color: green;">2</span>))
+
+
+
+      </div>
+    </div>
+  </div>
+    <br>
+
+    <div class="content_box">
+      <div class="content_text">
+        <h2>Reflection</h2>
+        <p>Procedural Abstraction:
+        <br>I used proceduaral abstraction by creating several helper functions. One of these helper functions was the make_square() function. This function made a filled in square in what ever color was called with the function. This was used to set up the obsticals so it was easier to see the path. Using this function made the code more robust because I did not need to repeat the same lines of code over and over. I also made helper functions for each individual paths driving instructions. This way I can call the specific functions in one larger main function after the set up grid has been executed.
+      <br>
+      <br>
+    How Could This Be More Efficient?:
+  <br> This code is not exactly efficient as it is all hard coded, and therefor is only partially reusable. In order to make this code more efficient I would use sensors so the robot knows when it is in contact with an obstical. This way the only information it would need is any 2D list.</p>
+      </div>
+    </div>
+  </body>
+</html>
