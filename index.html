@@ -1043,25 +1043,12 @@
     </div>
     <h2 class = "SectionTitle">Contact Me!</h2>
     <div class="container">
-      <form method="post" action="contact.php">
-
-        <label for="fname">First Name</label>
-        <input type="text" class = response_box id="fname" name="firstname" placeholder="Wally">
-
-        <label for="lname">Last Name</label>
-        <input class = response_box type="text" id="lname" name="lastname" placeholder="Smurph">
-
-        <label for="email">Email</label>
-        <input class = response_box type="text" id="email" name="email" placeholder="wallytheduck@gmail.com">
-
-        <label for="subject">Subject</label>
-        <input class = response_box type="text" id="subject" name="subject" placeholder="Just Want To Chat">
-
-        <label for="message">Message</label>
-        <textarea class = response_box id="message" name="message" placeholder="Howdy..." style="height:200px"></textarea>
-        <input type="submit" value="Submit">
-
-      </form>
+      <form role="form" action="contact.php" method="post">
+      <input name="name" required="required" type="text" placeholder="Enter Your Name" />
+      <input name="email" required="required" type="email" placeholder="Email ID"/>
+      <input name="mobile" required="required" type="text" placeholder="Enter Mobile No"/>
+      <textarea name="message" placeholder="Enter Any Message"></textarea>
+      <input name="submit" type="submit" value="Send a Mail" /></form>
     </div>
 
   </body>
