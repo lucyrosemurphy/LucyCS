@@ -1,0 +1,411 @@
+
+body{
+  background-color: hsl(227, 90%, 99%);
+  font-family: Helvetica;
+  overflow-x: hidden;
+  margin: 0px;
+  color:#4B5281;
+}
+
+/* Create three equal columns that floats next to each other */
+.column2 {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pathIMGs{
+  width:90%;
+  margin:auto;
+}
+
+.navContain{
+  display: none;
+}
+
+.prototypes_screen_1000{
+  display: none;
+  width:80%;
+  margin: auto;
+
+}
+
+.TopBoxSmall{
+  width:100%;
+  background-color: #4B5281;
+  color:#FFFFFF;
+  font-family: Helvetica;
+  padding-top:5px;
+  padding-bottom:5px;
+}
+
+.TopBox{
+  width:100%;
+  background-color: #4B5281;
+  color:#FFFFFF;
+  font-family: Helvetica;
+  text-align: center;
+}
+
+.footer{
+  width:100vw;
+  display:block;
+  overflow:hidden;
+  padding: 70px 0;
+  box-sizing:border-box;
+  background-color: #4B5281;
+}
+
+.inner_footer{
+  display:block;
+  margin: 0 auto;
+  width:100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.inner_footer .logo{
+  color:white;
+  float:left;
+  width:35%;
+  height: 100%;
+  display: block;
+  margin-left: 20px;
+}
+
+.inner_footer .footer_third{
+  width: 33%;
+  margin-right:10px;
+  float:left;
+  height: 100%;
+}
+
+.inner_footer .footer_third:last-child{
+  .margin-right: 0;
+}
+
+.inner_footer .footer_third h1{
+  font-family: Helvetica;
+  font-size: 22px;
+  color: #FF9F1C;
+  display:block;
+  width:100%;
+  margin-bottom:20px;
+}
+
+.inner_footer .footer_third a{
+  font-family: Helvetica;
+  font-size: 15px;
+  color: white;
+  display:block;
+  width:100%;
+  margin-bottom:20px;
+}
+
+.navContain{
+  width:100%;
+  text-align: center;
+  opacity: 99%;
+
+
+}
+
+nav ul ul {
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+
+}
+
+nav ul {
+  /* this is whats making the nav lean left */
+  border-radius: 0px;
+  list-style: none;
+  position: relative;
+  display: inline-table;
+  margin: auto;
+  margin-left: auto;
+  margin-left: auto;
+}
+
+nav ul:after {
+  content: ""; clear: both; display: block;
+
+}
+
+nav ul li {
+  float: left;
+ line-height: 30px;
+ font-size: 16px;
+
+}
+
+nav ul li:hover {
+  color: #FF9F1C;
+}
+nav ul li:hover a {
+  color: #FF9F1C;
+
+  }
+
+nav ul li a {
+  display: block; padding: 10px 40px;
+  color: #FFFFFF; text-decoration: none;
+
+}
+
+nav ul ul {
+background: #4B5281; border-radius: 0px; padding: 0;
+position: absolute; top: 100%;
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+nav ul ul li {
+  float: none;
+  border-top: 1px solid #FFFFFF;
+  position: relative;
+  color:#FFFFFF;
+
+}
+  nav ul ul li a {
+    padding: 15px 40px;
+    color: #FFFFFF;
+    color:#FFFFFF;
+    border-radius: 20px;
+  }
+    nav ul ul li a:hover {
+
+      color:white;
+      border-radius: 20px;
+    }
+
+    nav ul ul ul {
+    position: absolute; left: 100%; top:0;
+    border-radius: 20px;
+  }
+
+  .accentPeriod{
+    color:#FF9F1C;
+  }
+
+  .content_box{
+    width:90%;
+    margin:auto;
+    background-color: #FFFFFF;
+    box-shadow:  5px 5px 16px #ced5db,
+               -5px -5px 16px #ffffff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    margin: 20px;
+    margin-left: 20px;
+
+  }
+  .content_text{
+    margin: 20px;
+    padding-top:10px;
+    padding-bottom: 20px;
+    line-height: 25px;
+    margin-bottom: 0;
+    font-size: 20px;
+  }
+
+  .content_text_2{
+    margin: 20px;
+    padding-top:10px;
+    padding-bottom: 20px;
+    line-height: 40px;
+    margin-bottom: 0;
+    font-size: 15px;
+  }
+  .content_box_clear{
+    width:90%;
+    margin:auto;
+    background-color: #FFFFFF;
+
+    margin-bottom: 20px;
+    border-radius: 15px;
+    margin: 20px;
+    height: auto;
+
+
+  }
+  .content_box_clear h1{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    line-height: 5px;
+    margin-bottom: 0px;
+    font-size: 40px;
+
+
+  }
+
+  .content_box_clear h5{
+    text-align: center;
+    line-height: 20px;
+    color:#707070;
+    font-size: 15px;
+  }
+
+  .proto_2{
+    width:100%;
+    float:right;
+
+  }
+
+ .proto_1{
+    width:100%;
+    float:left;
+  }
+
+
+
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin:auto;
+  }
+
+  .column {
+    float: left;
+    width: 100%;
+    text-align: center;
+
+  }
+
+
+  .column img{
+    border-radius: 10px;
+  }
+
+  .spacer{
+    color:#FFFFFF
+  }
+
+  .indent1{
+    margin: 0;
+    margin-left: 10px;
+    font-family: monospace;
+    margin-right: 10px;
+  }
+ .no_indent{
+   font-family: monospace;
+   margin-right: 10px;
+ }
+  .indent2{
+    margin: 0;
+    margin-left: 20px;
+    font-family: monospace;
+    margin-right: 10px;
+  }
+
+  .indent3{
+    margin: 0;
+    margin-left: 30px;
+    font-family: monospace;
+    margin-right: 10px;
+  }
+
+  .indent4{
+    margin: 0;
+    margin-left: 40px;
+    font-family: monospace;
+    margin-right: 10px;
+  }
+
+  .content_box_clear{
+    width:90%;
+    margin:auto;}
+
+  .content_box{
+      width:90%;
+      margin:auto;
+    }
+
+    body{
+      background-color: hsl(227, 90%, 99%);
+      font-family: Helvetica;
+      overflow-x: hidden;
+      margin: 0px;
+      color:#4B5281;
+    }
+
+  .expand_button{
+    margin-top: 30px;
+    margin-bottom: 0px;
+    border: 0px;
+    background-color: #4B5281;
+    color:white;
+    padding-top:10px;
+    padding-bottom:10px;
+    border-radius: 20px;
+    font-size: 30px;
+
+  }
+
+  /* Style the submit button with a specific background color etc */
+  .expand_button {
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+  /* When moving the mouse over the submit button, add a darker green color */
+  .expand_button:hover {
+    background-color: #786568;
+  }
+
+  .expand_button:active {
+    background-color: #FF9F1C;
+  }
+
+
+/* This centers the button but I think i shouldnt  */
+  /* .expandable_box{
+    width:20%;
+    margin: auto;
+  } */
+
+  .expandable_box{
+
+    margin-left: 5%;
+  }
+
+  .expand_button, select, textarea:focus{
+     outline: none;
+  }
+  @media only screen and (min-width: 1000px) {
+    .navContain{display: block;}
+    .TopBoxSmall{display: none;}
+    .prototypes_screen_1000{display: block;}
+    .prototypes_small{display: none;}
+    .content_box_clear h1{font-size: 50px;}
+    .content_text_2{font-size: 30px;}
+  }
+
+  .noIndent{
+    margin-left: 10px;
+  }
+  .oneIndent{
+    margin-left: 15px;
+  }
+  .fourIndent{
+    margin-left: 30px;
+  }
+  .eightIndent{
+    margin-left: 50px;
+  }
