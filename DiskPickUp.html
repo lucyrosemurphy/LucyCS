@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!-- COLORS -->
+<!--Blue/Main color:4B5281-->
+<!--Orange/accent:FF9F1C-->
+
+
+<html>
+
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="disk.css">
+  </head>
+  <body>
+    <div class =TopBoxSmall>
+       <a href="#" style="color:white;text-decoration: none;font-family: Helvetica;font-size: 30px; margin-left:20px;"><b>MURPH<span class="accentPeriod">.</b></a>
+    </div>
+    <div class="TopBox">
+
+      <div class="navContain">
+        <nav>
+        	<ul>
+        		<li><a href="https://lucyrosemurphy.github.io/LucyCS/" style="color:white;font-family: Helvetica;font-size: 30px;"><b>MURPH<span class="accentPeriod">.</b></li>
+
+  <!-- ignore -->
+          		<ul>
+        				<li><a href="#">Netlogo</a></li>
+        			</ul>
+        		</li>
+  <!-- done ignore -->
+
+            <li><a href="#">Netlogo</a>
+              <ul>
+                <li><a href="#">Little Adventures</a></li>
+                <li><a href="#">Go Fish! (race)</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Python</a>
+              <ul>
+                <li><a href="#">Pokemon Popularity</a></li>
+                <li><a href="#">Dinos</a></li>
+              </ul>
+            </li>
+            <li><a href="#">HTML/CSS</a>
+              <ul>
+                <li><a href="#">Dinos Website</a></li>
+              </ul>
+            </li>
+            <li><a href="#">APP Inventor</a>
+              <ul>
+                <li><a href="#">DuckPond</a></li>
+                <li><a href="#">Little Adventures</a></li>
+              </ul>
+            </li>
+            <li><a href="#">VEX VR</a>
+              <ul>
+                <li><a href="https://lucyrosemurphy.github.io/MapItDriveIt/map">Map It, Drive It!</a></li>
+                <li><a href="https://lucyrosemurphy.github.io/MapItDriveIt/map">Disk Pickup</a></li>
+              </ul>
+            </li>
+        	</ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="content_box_clear">
+      <h1>DISK PICKUP</h1>
+
+      <div class="prototypes_small">
+        <div class = proto_1>
+          <img src="DiskPrototype1_Phone.png" alt="prototype">
+        </div>
+
+        <div class = proto_2>
+          <img src="DiskPrototype2_Phone.png" alt="prototype" style="float:right;">
+        </div>
+
+          <div class = proto_3>
+            <img src="DiskPrototype3_Phone.png" alt="prototype" style="">
+          </div>
+      </div>
+
+      <div class="prototypes_screen_1000">
+        <div class = proto_1>
+          <img src="DiskPrototype1_1000.png" alt="prototype">
+        </div>
+
+        <div class = proto_2>
+          <img src="DiskPrototype2_1000.png" alt="prototype" style="float:right;">
+        </div>
+
+          <div class = proto_3>
+            <img src="DiskPrototype3_1000.png" alt="prototype">
+          </div>
+      </div>
+    </div>
+
+
+<div class="row4">
+  <div class="expandable_box">
+    <button class="expand_button" id="button" onclick="showhide()">View/Hide code</button>
+  </div>
+  <div id="newpost">
+  <div class="column4">
+    <div class="content_box">
+      <div class="content_text" style="font-size: 25px; line-height: 30px;">
+        <h2>Psudocode</h2>
+        <p class="psudo">
+          <div class='noIndent'>when started:</div>
+          <div class='fourIndent'>    pen down</div>
+          <div class='fourIndent'>    repeat 3 times</div>
+          <div class='fourIndent'>    	while robot does not detect blue:</div>
+          <div class='eightIndent'>        forward</div>
+          <div class='fourIndent'>    	stop</div>
+          <div class='fourIndent'>    	pick up disk</div>
+          <div class='fourIndent'>    	set heading to 180</div>
+          <div class='fourIndent'>    	while not at center of goal</div>
+          <div class='eightIndent'>        drive forward</div>
+          <div class='fourIndent'>    	stop driving</div>
+          <div class='fourIndent'>    	drop disk</div>
+          <div class='fourIndent'>    	drive forward 100</div>
+          <div class='fourIndent'>    	set heading to 0</div>
+          <div class='fourIndent'>    	drive forward 100</div>
+          <div class='fourIndent'>    right 90 degrees</div>
+          <div class='fourIndent'>    forward 800</div>
+          <div class='fourIndent'>    set heading to 0</div>
+          <div class='fourIndent'>    repeat 3 times</div>
+          <div class='fourIndent'>    	while robot does not detect red:</div>
+          <div class='eightIndent'>        forward</div>
+          <div class='fourIndent'>    	stop</div>
+          <div class='fourIndent'>    	pick up disk</div>
+          <div class='fourIndent'>    	set heading to 180</div>
+          <div class='fourIndent'>    	while not at center of goal</div>
+          <div class='eightIndent'>        drive forward</div>
+          <div class='fourIndent'>    	stop driving</div>
+          <div class='fourIndent'>    	drop disk</div>
+          <div class='fourIndent'>    	drive forward 100</div>
+          <div class='fourIndent'>    	set heading to 0</div>
+          <div class='fourIndent'>    	drive forward 100</div>
+          <div class='fourIndent'>    right 90 degrees</div>
+          <div class='fourIndent'>    forward 800</div>
+          <div class='fourIndent'>    set heading to 0</div>
+          <div class='fourIndent'>    repeat 3 times</div>
+          <div class='fourIndent'>    	while robot does not detect green:</div>
+          <div class='eightIndent'>        forward</div>
+          <div class='fourIndent'>    	stop</div>
+          <div class='fourIndent'>    	pick up disk</div>
+          <div class='fourIndent'>    	set heading to 180</div>
+          <div class='fourIndent'>    	while not at center of goal</div>
+          <div class='eightIndent'>        drive forward</div>
+          <div class='fourIndent'>    	stop driving</div>
+          <div class='fourIndent'>    	drop disk</div>
+          <div class='fourIndent'>    	drive forward 100</div>
+          <div class='fourIndent'>    	set heading to 0</div>
+          <div class='fourIndent'>    	drive forward 100</div>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="column4">
+    <div class="content_box" >
+      <div class="content_text">
+        <h2>Python</h2>
+          <p>
+            <div class="content_text_2">
+              <div class='noIndent'><span style='color: blue;'>def</span> GotoNextLane():</div>
+              <div class='fourIndent'>    <span style='color: teal;'>drivetrain</span>.<span style='color: firebrick;'>turn_for</span>(<span style='color: orange;'>RIGHT</span>, <span style='color: green;'>9</span><span style='color: green;'>0</span>, <span style='color: orange;'>DEGREES</span>)</div>
+              <div class='fourIndent'>    <span style='color: teal;'>drivetrain</span>.<span style='color: firebrick;'>drive_for</span>(<span style='color: orange;'>FORWARD</span>, <span style='color: green;'>8</span><span style='color: green;'>0</span><span style='color: green;'>0</span>, <span style='color: orange;'>MM</span>)</div>
+              <div class='fourIndent'>    <span style='color: teal;'>drivetrain</span>.<span style='color: firebrick;'>turn_to_heading</span>(<span style='color: green;'>0</span>, <span style='color: orange;'>DEGREES</span>)</div>
+              <div class='noIndent'><span style='color: blue;'>def</span> drivePick_color(color):</div>
+              <div class='fourIndent'>    <span style='color: blue;'>while not</span> <span style='color: teal;'>down_eye</span>.<span style='color: firebrick;'>detect</span>(color):</div>
+              <div class='eightIndent'>        <span style='color: teal;'>drivetrain</span>.<span style='color: firebrick;'>drive</span>(<span style='color: orange;'>FORWARD</span>)</div>
+              <div class='eightIndent'>        <span style='color: firebrick;'>wait</span>(<span style='color: green;'>5</span>, <span style='color: orange;'>MSEC</span>)</div>
+              <div class='fourIndent'>    <span style='color: teal;'>drivetrain</span>.<span style='color: firebrick;'>stop</span>()</div>
+              <div class='fourIndent'>    <span style='color: teal;'>magnet</span>.<span style='color: firebrick;'>energize</span>(<span style='color: orange;'>BOOST</span>)</div>
+              <div class='fourIndent'>    <span style='color: teal;'>drivetrain</span>.<span style='color: firebrick;'>turn_to_heading</span>(<span style='color: green;'>1</span><span style='color: green;'>8</span><span style='color: green;'>0</span>, <span style='color: orange;'>DEGREES</span>)</div>
+              <div class='fourIndent'>    <span style='color: blue;'>while not</span> <span style='color: teal;'>distance</span>.<span style='color: firebrick;'>get_<span style='color: teal;'>distance</span></span>(<span style='color: orange;'>MM</span>) < <span style='color: green;'>2</span><span style='color: green;'>0</span><span style='color: green;'>0</span>:</div>
+              <div class='eightIndent'>        <span style='color: teal;'>drivetrain</span>.<span style='color: firebrick;'>drive</span>(<span style='color: orange;'>FORWARD</span>)</div>
+              <div class='eightIndent'>        <span style='color: firebrick;'>wait</span>(<span style='color: green;'>5</span>, <span style='color: orange;'>MSEC</span>)</div>
+              <div class='fourIndent'>    <span style='color: teal;'>drivetrain</span>.<span style='color: firebrick;'>stop</span>()</div>
+              <div class='fourIndent'>    <span style='color: teal;'>magnet</span>.<span style='color: firebrick;'>energize</span>(<span style='color: orange;'>DROP</span>)</div>
+              <div class='fourIndent'>    <span style='color: teal;'>drivetrain</span>.<span style='color: firebrick;'>drive_for</span>(<span style='color: orange;'>FORWARD</span>, <span style='color: green;'>1</span><span style='color: green;'>0</span><span style='color: green;'>0</span>, <span style='color: orange;'>MM</span>)</div>
+              <div class='fourIndent'>    <span style='color: teal;'>drivetrain</span>.<span style='color: firebrick;'>turn_to_heading</span>(<span style='color: green;'>0</span>, <span style='color: orange;'>DEGREES</span>)</div>
+              <div class='fourIndent'>    <span style='color: teal;'>drivetrain</span>.<span style='color: firebrick;'>drive_for</span>(<span style='color: orange;'>FORWARD</span>, <span style='color: green;'>1</span><span style='color: green;'>0</span><span style='color: green;'>0</span>, <span style='color: orange;'>MM</span>)</div>
+              <div class='noIndent'><span style='color: blue;'>def</span> when_started():</div>
+              <div class='fourIndent'>    <span style='color: teal;'>pen</span>.<span style='color: firebrick;'>move</span>(<span style='color: orange;'>DOWN</span>)</div>
+              <div class='fourIndent'>    <span style='color: teal;'>drivetrain</span>.<span style='color: firebrick;'>set_drive_velocity</span>(<span style='color: green;'>1</span><span style='color: green;'>0</span><span style='color: green;'>0</span>, <span style='color: orange;'>PERCENT</span>)</div>
+              <div class='fourIndent'>    <span style='color: teal;'>drivetrain</span>.<span style='color: firebrick;'>set_turn_velocity</span>(<span style='color: green;'>1</span><span style='color: green;'>0</span><span style='color: green;'>0</span>, <span style='color: orange;'>PERCENT</span>)</div>
+              <div class='fourIndent'>    drivePick_color(<span style='color: orange;'>BLUE</span>)</div>
+              <div class='fourIndent'>    drivePick_color(<span style='color: orange;'>BLUE</span>)</div>
+              <div class='fourIndent'>    drivePick_color(<span style='color: orange;'>BLUE</span>)</div>
+              <div class='fourIndent'>    GotoNextLane()</div>
+              <div class='fourIndent'>    drivePick_color(<span style='color: orange;'>RED</span>)</div>
+              <div class='fourIndent'>    drivePick_color(<span style='color: orange;'>RED</span>)</div>
+              <div class='fourIndent'>    drivePick_color(<span style='color: orange;'>RED</span>)</div>
+              <div class='fourIndent'>    GotoNextLane()</div>
+              <div class='fourIndent'>    drivePick_color(<span style='color: orange;'>GREEN</span>)</div>
+              <div class='fourIndent'>    drivePick_color(<span style='color: orange;'>GREEN</span>)</div>
+              <div class='fourIndent'>    drivePick_color(<span style='color: orange;'>GREEN</span>)</div>
+              <div class='noIndent'><span style='color: firebrick;'>vr_thread</span>(when_started())</div>
+            </div>
+          </p>
+        </div>
+        </div>
+        <script>
+        function showhide()
+          {
+                var div = document.getElementById("newpost");
+          if (div.style.display !== "block") {
+             div.style.display = "block";
+          }
+          else {
+             div.style.display = "none";
+          }
+          }
+        </script>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+          <script>
+          function showhide()
+            {
+                  var div = document.getElementById("newpost");
+            if (div.style.display !== "block") {
+               div.style.display = "block";
+            }
+            else {
+               div.style.display = "none";
+            }
+            }
+          </script>
+
+      </div>
+
+    <br>
+    <div class="imagessmall">
+      <div class="content_box">
+        <div class="content_text">
+          <video width="100%" height="auto" controls>
+            <source src="diskPickUpCut.mov" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+    
+    <div class="content_box">
+      <div class="content_text">
+        <h2>Reflection</h2>
+        <p>Procedural Abstraction:
+        <br>I implimented procedural abstraction by creating one main function and two helper functions. I did this to make my code more robust and less repetative. My two helper functions are: GotoNextLane() and drivePick_color(color). GotoNextLane() is called after all the disks of a specific color have been brought back to the goal, and it instructs the robot to move to the next goal. The second --drivePick_color(color)-- contains all the instructions on how to move and pick up the disks. This function is called nine times: three for green, three for blue, and three for red.
+      <br>
+      <br>
+    Logical Concepts:
+  <br>I used logical operators throught the code. One example of this is:
+    <div class='fourIndent'>    <span style='color: blue;'>while not</span> <span style='color: teal;'>distance</span>.<span style='color: firebrick;'>get_<span style='color: teal;'>distance</span></span>(<span style='color: orange;'>MM</span>) < <span style='color: green;'>2</span><span style='color: green;'>0</span><span style='color: green;'>0</span>:</div>
+    <div class='eightIndent'>        <span style='color: teal;'>drivetrain</span>.<span style='color: firebrick;'>drive</span>(<span style='color: orange;'>FORWARD</span>)</div>
+    <div class='eightIndent'>        <span style='color: firebrick;'>wait</span>(<span style='color: green;'>5</span>, <span style='color: orange;'>MSEC</span>)</div></p>
+    Here the logical concept is the "while not". This line prohibits the other lines from executing once the requirements after the not are met.
+      </div>
+    </div>
+  </br>
+</br>
+  </body>
+</html>
